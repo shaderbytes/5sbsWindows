@@ -1782,9 +1782,7 @@
       <DEFAULT>
         <S><![CDATA[1,1,1]]></S>
       </DEFAULT>
-      <HORIZONTAL_INVERT>
-        <S_NEGATE_X>true</S_NEGATE_X>
-      </HORIZONTAL_INVERT>
+     
       <TUSCON_INVERT>
         <S><![CDATA[-1,1,1]]></S>
       </TUSCON_INVERT>
@@ -1803,9 +1801,7 @@
       <DEFAULT>
         <S><![CDATA[1,1,1]]></S>
       </DEFAULT>
-      <HORIZONTAL_INVERT>
-        <S_NEGATE>true</S_NEGATE>
-      </HORIZONTAL_INVERT>
+     
       <TUSCON_INVERT>
         <S><![CDATA[-1,1,1]]></S>
       </TUSCON_INVERT>
