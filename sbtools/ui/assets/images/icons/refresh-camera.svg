@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <g transform="matrix(0.703212,0,0,0.703212,4.32289,-1.80675)">
+        <path d="M23,4L23,10L17,10" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.42px;"/>
+    </g>
+    <g transform="matrix(0.703212,0,0,0.703212,2.81843,8.99224)">
+        <path d="M1,20L1,14L7,14" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.42px;"/>
+    </g>
+    <g transform="matrix(1.20591,0,0,1.20591,-2.47096,-2.47096)">
+        <path d="M3.51,9C4.779,5.414 8.191,3.002 11.994,3.002C14.381,3.002 16.673,3.952 18.36,5.64M5.64,18.36C7.327,20.048 9.619,20.998 12.006,20.998C15.809,20.998 19.221,18.586 20.49,15" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.98px;"/>
+    </g>
+    <g id="camera" transform="matrix(0.58802,0,0,0.58802,12,11.2562)">
+        <g transform="matrix(1,0,0,1,-12,-12)">
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="24" height="24"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <path d="M23,19C23,20.097 22.097,21 21,21L3,21C1.903,21 1,20.097 1,19L1,8C1,6.903 1.903,6 3,6L7,6L9,3L15,3L17,6L21,6C22.097,6 23,6.903 23,8L23,19Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:2px;"/>
+                <circle cx="12" cy="13" r="4" style="fill:none;stroke:black;stroke-width:2px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

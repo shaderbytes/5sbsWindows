@@ -1,0 +1,28 @@
+{
+  "name": "Five-Star-Bath-Solutions-Electron",
+  "version": "1.0.0",
+  "description": "Five Star Bath Solutions Configurator",
+  "main": "main.js",
+  "repository": {
+  "type" : "git",
+  "url" : "https://github.com/shaderbytes/shaderbytes/5sbsWindows.git"
+},
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "author": "Ian Pretorius",
+  "license": "ISC",
+  "dependencies": {
+    "electron-updater": "^4.3.1",
+    "fs-extra": "^9.0.0",
+    "gsap": "^3.2.6",
+    "jquery": "^3.5.0",
+    "xhr2": "^0.2.0"
+  },
+  "devDependencies": {
+    "electron": "^8.3.1",
+    "electron-builder": "^22.7.0"
+  }
+}

@@ -1,0 +1,73 @@
+﻿<UII>
+  <TYPE><![CDATA[UIItemButton]]></TYPE>
+  <!--multiple property tags supported on any UIItem component -->
+  <PROPERTY>
+    <KEY><![CDATA[propertyName]]></KEY>
+    <VALUE><![CDATA[propertyValue]]></VALUE>
+    <!--type can be boolean , string , float , function -->
+    <TYPE><![CDATA[propertyType]]></TYPE>
+  </PROPERTY>
+  <!--examples of button properties -->
+
+  <!--this will cause the button to trigger the event for isSelected -->
+  <PROPERTY>
+    <KEY><![CDATA[permitEventDispatchOnBuild]]></KEY>
+    <VALUE><![CDATA[true]]></VALUE>
+    <TYPE><![CDATA[boolean]]></TYPE>
+  </PROPERTY>
+
+  <!--this will set isSelected -->
+  <PROPERTY>
+    <KEY><![CDATA[isSelected]]></KEY>
+    <VALUE><![CDATA[true]]></VALUE>
+    <TYPE><![CDATA[boolean]]></TYPE>
+  </PROPERTY>
+
+  <!--optional tag group is not required use only if grouping is needed , only one group tag supported-->
+  <SELECTION_GROUP>0</SELECTION_GROUP>
+
+  <!--multiple css tags supported -->
+  <CSS><![CDATA[ui-item-button-1]]></CSS>
+
+  <!--function called when button is pressed , for accordians , the button will have a internal set up and will just work this is to let your code know what you clicked-->
+  <!--the builder will look to add a listener for a internal function of this name as well as on the application reference passed into the builder-->
+  <INTERACTION_HOOK>
+    <NAME><![CDATA[click]]></NAME>
+    <FUNCTION><![CDATA[actionCameraToggle]]></FUNCTION>
+    <!--optional tag , the button object is always passed an event with much data on it about the button and mouse event but this is for additional data to add to the event-->
+    <DATA></DATA>
+  </INTERACTION_HOOK>
+
+  <!--optional tags LABEL , ICON , buttons can have label or icon or both , but atleast one otherwise it is non descriptive-->
+  <!--these map to actual UIItem builds, UIItemLabel and UIItemIcon , which could be used in any context , not just a button-->
+
+  <LABEL>
+    <UII>
+      <TYPE><![CDATA[UIItemLabel]]></TYPE>
+      <!--multiple css tags supported -->
+      <CSS><![CDATA[ui-item-p-1]]></CSS>
+      <VALUE><![CDATA[Camera]]></VALUE>
+    </UII>
+  </LABEL>
+
+  <ICON>
+    <UII>
+
+      <PROPERTY>
+        <KEY><![CDATA[useMinWidth]]></KEY>
+        <VALUE><![CDATA[false]]></VALUE>
+        <TYPE><![CDATA[boolean]]></TYPE>
+      </PROPERTY>
+
+      <TYPE><![CDATA[UIItemIcon]]></TYPE>
+      <!--multiple css tags supported -->
+      <CSS><![CDATA[ui-item-icon-2]]></CSS>
+      <!--multiple css mask tags supported -->
+      <CSS_MASK><![CDATA[ui-item-icon-mask-2]]></CSS_MASK>
+      <!--multiple URL tags supported , in the context of a button it will expect index 0 and 1 to be icons for unselected and selected -->
+      <URL>4</URL>
+      <URL>5</URL>
+    </UII>
+  </ICON>
+
+</UII>

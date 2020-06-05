@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="initial-scale=1,minimum-scale=1.0, width=device-width" name="viewport" />
+        <meta name="keywords" content="5 Star Bath Solutions Configurator">
+   
+        <!-- sample fb meta -->
+        <meta property="og:title" content="5 Star Bath Solutions Configurator" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="insert_url_here/index.html" />
+        <meta property="og:image" content="insert_url_here/socialmedia-share.jpg" />
+        <meta property="og:description" content="5 Star Bath Solutions Configurator" />
+        <!-- sample twitter meta -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="insert_url_here/index.html" />
+        <meta name="twitter:creator" content="@shaderbytes" />
+        <meta name="twitter:title" content="5 Star Bath Solutions Configurator" />
+        <meta name="twitter:description" content="5 Star Bath Solutions Configurator" />
+    
+        <meta name="twitter:image" content="insert_url_here/socialmedia-share.jpg">
+
+        <title>5 Star Bath Solutions Configurator</title>
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="sbtools/ui/css/SBCSS_UIBuild.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="sbtools/ui/css/SBCSS_UIThemes.css" />
+
+       
+        <script type="text/javascript" src="sbtools/babylon/js/pep.js"></script>
+         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+         <script type="text/javascript" src="js/TweenMax.min.js"></script>
+
+         <script type="text/javascript" src="sbtools/ui/js/SBJS_UIHilights.js"></script>  
+         <script type="text/javascript" src="sbtools/core/SBJSCore.js"></script>
+         <script type="text/javascript" src="sbtools/core/SBJS_AJAXCore.js"></script>         
+         <script type="text/javascript" src="sbtools/ui/js/SBJS_UICore.js"></script>
+        <script type="text/javascript" src="sbtools/ui/js/SBJS_UIBuild.js"></script>    
+        
+          <script type="text/javascript" src="sbtools/babylon/js/babylon.js"></script>
+        <script type="text/javascript" src="sbtools/babylon/js/babylonjs.loaders.min.js"></script>
+        <script type="text/javascript" src="sbtools/babylon/js/BabylonAPIUCore.js"></script>
+       
+        <script type="text/javascript" src="sbtools/babylon/js/BabylonAssetController.js"></script>
+       
+        <script type="text/javascript" src="js/Application.js"></script>
+
+      
+       
+    
+
+    </head>
+    <body>
+
+        <div id="main">
+            <div class="ui-header-content ui-item-content" id="ui-header-container"></div>          
+            <div class="ui-item-tools-container"></div> 
+            <div class="ui-item-container"></div>     
+            <div id="preloader-1">
+            <p>LOADING</p>
+            </div>     
+            <div id="content">  
+               <canvas id="renderCanvas" touch-action="none"></canvas> 
+            </div>            
+        </div>
+        <div id="notification" class="hidden">
+  <p id="message"></p>
+  <button id="close-button" onClick="closeNotification()">
+    Close
+  </button>
+  <button id="restart-button" onClick="restartApp()" class="hidden">
+    Restart
+  </button>
+</div>
+
+        <script type="text/javascript">
+            var a;    
+           
+            window.onload = function () { 
+            var $  = require('jquery');
+            var jQuery  = require('jquery');
+               window.$ = jQuery;
+              a = new Application();
+            };
+
+            const { ipcRenderer } = require('electron');
+           
+    
+            ipcRenderer.send('app_version');
+            ipcRenderer.on('app_version', (event, arg) => {
+                ipcRenderer.removeAllListeners('app_version');
+               console.log( 'Version ' + arg.version);
+            });
+
+            const notification = document.getElementById('notification');
+const message = document.getElementById('message');
+const restartButton = document.getElementById('restart-button');
+ipcRenderer.on('update_available', () => {
+  ipcRenderer.removeAllListeners('update_available');
+  message.innerText = 'A new update is available. Downloading now...';
+  notification.classList.remove('hidden');
+});
+ipcRenderer.on('update_downloaded', () => {
+  ipcRenderer.removeAllListeners('update_downloaded');
+  message.innerText = 'Update Downloaded. It will be installed on restart. Restart now?';
+  restartButton.classList.remove('hidden');
+  notification.classList.remove('hidden');
+});
+
+function closeNotification() {
+  notification.classList.add('hidden');
+}
+function restartApp() {
+  ipcRenderer.send('restart_app');
+}
+
+        </script>
+   
+
+    </body>
+</html>

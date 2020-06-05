@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ASSETS CAN BE AN EMPTY OR HAVE GEOMETRY-->
+<!-- ASSETS CAN BE NESTED, THIS IS NORMALLY AN EMPTY CONTAINER AND CHILDREN WITH GEOMETRY-->
+<!-- KEY is the string used to stor and reference the asset-->
+<!-- TRANSFORM can be affected by filters-->
+<!-- TRANSFORM can be omitted and the object will get a zerod out position : 0,0,0 , zerod rotation 0,0,0 and oned scaled , 1,1,1-->
+<!-- L,R,S of children can also be omitted individually and the same logic as above applies , they will just get a zero or 1 vector default-->
+<!-- DISPLAY can be affected by filters-->
+<!-- DISPLAY can be omitted if you know it is not affect by filters-->
+<!-- URL can be left out and it wll be an empty or point to a child of a objct already loaded, URL will point to a .glb to load for geometry-->
+<!-- PARENT tag is opional to say if the asset needs to be paented to another object , if omitted it is added to the scene root-->
+
+
+
+
+<ROOT>
+
+  <BUILD_TARGET><![CDATA[processData]]></BUILD_TARGET>
+
+
+
+  <!-- room-->
+  <ASSET>
+    <LOAD_ASSET_ON_START><![CDATA[true]]></LOAD_ASSET_ON_START>
+    <KEY><![CDATA[room]]></KEY>
+    <URL><![CDATA[assets/glb/room.glb]]></URL>
+
+  </ASSET>
+  <!-- basket-->
+  <ASSET>
+    <KEY><![CDATA[basket]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[2.22967,-2.08902,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/basket.glb]]></URL>
+  </ASSET>
+  <!-- vanity-->
+  <ASSET>
+    <KEY><![CDATA[vanity]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[3.93836,-3.64087,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/vanity.glb]]></URL>
+  </ASSET>
+
+  <!-- mats-->
+  <ASSET>
+    <KEY><![CDATA[mats]]></KEY>
+    <URL><![CDATA[assets/glb/mats.glb]]></URL>
+  </ASSET>
+
+  <!-- picture_left-->
+  <ASSET>
+    <KEY><![CDATA[picture_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-3.00202,-1.43127,3.32422]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/picture_left.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+  </ASSET>
+
+  <!-- picture_right-->
+  <ASSET>
+    <KEY><![CDATA[picture_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[3.00202,-1.43127,3.32422]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/picture_right.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+  </ASSET>
+
+  <!-- mirror_1-->
+  <ASSET>
+    <KEY><![CDATA[mirror_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[4.36974,-3.39196,3.23358]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/mirror_1.glb]]></URL>
+
+  </ASSET>
+
+  <!-- plant_1-->
+  <ASSET>
+    <KEY><![CDATA[plant_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[3.598,-2.16859,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/plant_1.glb]]></URL>
+  </ASSET>
+
+  <!-- towel_1-->
+  <ASSET>
+    <KEY><![CDATA[towel_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.97132,-1.54335,2.58188]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/towel_1.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+  </ASSET>
+
+  <!-- drawers_1-->
+  <ASSET>
+    <KEY><![CDATA[drawers_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-3.92515,-4.78046,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/drawers_1.glb]]></URL>
+  </ASSET>
+
+ 
+
+
+
+
+
+
+</ROOT>
+
+
+
+
+

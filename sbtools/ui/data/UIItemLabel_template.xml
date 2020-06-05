@@ -1,0 +1,14 @@
+﻿<UII>
+  <TYPE><![CDATA[UIItemLabel]]></TYPE>
+  <!--optional tag, multiple property tags supported on any UIItem component -->
+  <PROPERTY>
+    <KEY><![CDATA[propertyName]]></KEY>
+    <VALUE><![CDATA[propertyValue]]></VALUE>
+    <!--type can be boolean , string , float , function -->
+    <TYPE><![CDATA[propertyType]]></TYPE>
+  </PROPERTY>
+
+  <!--multiple css tags supported -->
+  <CSS><![CDATA[ui-item-p-1]]></CSS>
+  <VALUE><![CDATA[Camera]]></VALUE>
+</UII>

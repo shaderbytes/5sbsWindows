@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<ROOT>
+
+  <BUILD_TARGET><![CDATA[buildThemeSets]]></BUILD_TARGET>
+  <THEME_INDEX_DEFAULT>1</THEME_INDEX_DEFAULT>
+
+  <!-- new set-->
+  
+  <THEME_SET>
+    <!-- CONTAINERS-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-content]]></SELECTOR>
+      <THEME><![CDATA[ui-item-content-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-container-tools]]></SELECTOR>
+      <THEME><![CDATA[ui-item-container-tools-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-accordian-child-container]]></SELECTOR>
+      <THEME><![CDATA[ui-item-accordian-child-container-theme-1]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[#main]]></SELECTOR>
+      <THEME><![CDATA[main-theme-1]]></THEME>
+    </UI>
+    
+    <UI>
+      <SELECTOR><![CDATA[.ui-header-content]]></SELECTOR>
+      <THEME><![CDATA[ui-header-content-theme-1]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[.ui-div-1]]></SELECTOR>
+      <THEME><![CDATA[ui-div-1-theme-1]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[.ui-div-2]]></SELECTOR>
+      <THEME><![CDATA[ui-div-2-theme-1]]></THEME>
+    </UI>
+    
+
+    <!-- BUTTONS-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-1]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-1-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-2]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-2-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-3]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-3-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-4]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-4-theme-1]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-5]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-5-theme-1]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-6]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-6-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-7]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-7-theme-1]]></THEME>
+    </UI>
+   
+    <!-- TEXT-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-1]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-1-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-2]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-2-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-3]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-3-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-4]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-4-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-5]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-5-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-6]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-6-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-7]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-7-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-8]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-8-theme-1]]></THEME>
+    </UI>
+    <!-- DIVIDERS-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-divider-1]]></SELECTOR>
+      <THEME><![CDATA[ui-divider-1-theme-1]]></THEME>
+    </UI>
+    <!-- MASKS-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-icon-mask-1]]></SELECTOR>
+      <THEME><![CDATA[ui-item-icon-mask-1-theme-1]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-icon-mask-2]]></SELECTOR>
+      <THEME><![CDATA[ui-item-icon-mask-2-theme-1]]></THEME>
+    </UI>
+
+    <HILIGHT_ACTIONS>
+      <VARIABLE><![CDATA[value1]]></VARIABLE>
+      <VALUE><![CDATA[#0199ff]]></VALUE>
+    </HILIGHT_ACTIONS>
+    <HILIGHT_ACTIONS>
+      <VARIABLE><![CDATA[value2]]></VARIABLE>
+      <VALUE><![CDATA[#eee]]></VALUE>
+    </HILIGHT_ACTIONS>
+   
+
+
+  </THEME_SET>
+  
+  <!-- new set  -->
+  
+  <THEME_SET>
+    <!-- CONTAINERS-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-content]]></SELECTOR>
+      <THEME><![CDATA[ui-item-content-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-container-tools]]></SELECTOR>
+      <THEME><![CDATA[ui-item-container-tools-theme-2]]></THEME>
+    </UI>
+    <UI>
+     
+      <SELECTOR><![CDATA[.ui-item-accordian-child-container]]></SELECTOR>
+      <THEME><![CDATA[ui-item-accordian-child-container-theme-2]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[#main]]></SELECTOR>
+      <THEME><![CDATA[main-theme-2]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[.ui-header-content]]></SELECTOR>
+      <THEME><![CDATA[ui-header-content-theme-2]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[.ui-div-1]]></SELECTOR>
+      <THEME><![CDATA[ui-div-1-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-div-2]]></SELECTOR>
+      <THEME><![CDATA[ui-div-2-theme-2]]></THEME>
+    </UI>
+    
+    <!-- BUTTONS-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-1]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-1-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-2]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-2-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-3]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-3-theme-2]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-4]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-4-theme-2]]></THEME>
+    </UI>
+    
+     <UI>
+      <SELECTOR><![CDATA[.ui-item-button-5]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-5-theme-2]]></THEME>
+    </UI>
+
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-6]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-6-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-button-7]]></SELECTOR>
+      <THEME><![CDATA[ui-item-button-7-theme-2]]></THEME>
+    </UI>
+
+    <!-- TEXT-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-1]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-1-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-2]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-2-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-3]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-3-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-4]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-4-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-5]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-5-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-6]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-6-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-7]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-7-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-p-8]]></SELECTOR>
+      <THEME><![CDATA[ui-item-p-8-theme-2]]></THEME>
+    </UI>
+    <!-- DIVIDERS-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-divider-1]]></SELECTOR>
+      <THEME><![CDATA[ui-divider-1-theme-2]]></THEME>
+    </UI>
+    <!-- MASKS-->
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-icon-mask-1]]></SELECTOR>
+      <THEME><![CDATA[ui-item-icon-mask-1-theme-2]]></THEME>
+    </UI>
+    <UI>
+      <SELECTOR><![CDATA[.ui-item-icon-mask-2]]></SELECTOR>
+      <THEME><![CDATA[ui-item-icon-mask-2-theme-2]]></THEME>
+    </UI>
+
+    <HILIGHT_ACTIONS>
+      <VARIABLE><![CDATA[value1]]></VARIABLE>
+      <VALUE><![CDATA[#ff6600]]></VALUE>
+    </HILIGHT_ACTIONS>
+    <HILIGHT_ACTIONS>
+      <VARIABLE><![CDATA[value2]]></VARIABLE>
+      <VALUE><![CDATA[#fff]]></VALUE>
+    </HILIGHT_ACTIONS>
+    
+  </THEME_SET>
+  
+</ROOT>
+ 
+  
+
+
+

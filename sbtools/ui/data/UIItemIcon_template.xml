@@ -1,0 +1,19 @@
+﻿<UII>
+
+  <!--optional tag, multiple property tags supported on any UIItem component -->
+  <PROPERTY>
+    <KEY><![CDATA[propertyName]]></KEY>
+    <VALUE><![CDATA[propertyValue]]></VALUE>
+    <!--type can be boolean , string , float , function -->
+    <TYPE><![CDATA[propertyType]]></TYPE>
+  </PROPERTY>
+
+  <TYPE><![CDATA[UIItemIcon]]></TYPE>
+  <!--multiple css tags supported -->
+  <CSS><![CDATA[ui-item-icon-2]]></CSS>
+  <!--multiple css mask tags supported -->
+  <CSS_MASK><![CDATA[ui-item-icon-mask-2]]></CSS_MASK>
+  <!--multiple URL tags supported , in the context of a button it will expect index 0 and 1 to be icons for unselected and selected -->
+  <URL>4</URL>
+  <URL>5</URL>
+</UII>

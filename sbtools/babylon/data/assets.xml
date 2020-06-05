@@ -1,0 +1,1834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ASSETS CAN BE AN EMPTY OR HAVE GEOMETRY-->
+<!-- ASSETS CAN BE NESTED, THIS IS NORMALLY AN EMPTY CONTAINER AND CHILDREN WITH GEOMETRY-->
+<!-- KEY is the string used to stor and reference the asset-->
+<!-- TRANSFORM can be affected by filters-->
+<!-- TRANSFORM can be omitted and the object will get a zerod out position : 0,0,0 , zerod rotation 0,0,0 and oned scaled , 1,1,1-->
+<!-- L,R,S of children can also be omitted individually and the same logic as above applies , they will just get a zero or 1 vector default-->
+<!-- DISPLAY can be affected by filters-->
+<!-- DISPLAY can be omitted if you know it is not affect by filters-->
+<!-- URL can be left out and it wll be an empty or point to a child of a objct already loaded, URL will point to a .glb to load for geometry-->
+<!-- PARENT tag is opional to say if the asset needs to be paented to another object , if omitted it is added to the scene root-->
+
+
+
+
+<ROOT>
+
+  <BUILD_TARGET><![CDATA[processData]]></BUILD_TARGET>
+
+
+  <!-- faucet_collection-->
+  <ASSET>
+    <KEY><![CDATA[faucet_collection]]></KEY>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+  </ASSET>
+
+
+  <!-- room-->
+  <ASSET>
+    <LOAD_ASSET_ON_START><![CDATA[true]]></LOAD_ASSET_ON_START>
+    <KEY><![CDATA[room]]></KEY>
+    <URL><![CDATA[assets/glb/room.glb]]></URL>
+   
+  </ASSET>
+  
+  <!-- basket-->
+  <ASSET>
+    <KEY><![CDATA[basket]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[2.22967,-2.08902,0]]></L>            
+      </DEFAULT>     
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/basket.glb]]></URL>
+  </ASSET>
+
+  <!-- vanity-->
+  <ASSET>
+    <KEY><![CDATA[vanity]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[3.93836,-3.64087,0]]></L>        
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/vanity.glb]]></URL>
+  </ASSET>
+
+  <!-- mats-->
+  <ASSET>
+    <KEY><![CDATA[mats]]></KEY>    
+    <URL><![CDATA[assets/glb/mats.glb]]></URL>
+  </ASSET>
+
+  <!-- picture_left-->
+  <ASSET>
+    <KEY><![CDATA[picture_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-3.00202,-1.43127,3.32422]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/picture_left.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+  </ASSET>
+
+  <!-- picture_right-->
+  <ASSET>
+    <KEY><![CDATA[picture_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[3.00202,-1.43127,3.32422]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/picture_right.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+  </ASSET>
+
+  <!-- mirror_1-->
+  <ASSET>
+    <KEY><![CDATA[mirror_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[4.36974,-3.39196,3.23358]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/mirror_1.glb]]></URL>
+   
+  </ASSET>
+
+  <!-- plant_1-->
+  <ASSET>
+    <KEY><![CDATA[plant_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[3.62823,-2.18681,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/plant_1.glb]]></URL>
+  </ASSET>
+
+  <!-- towel_1-->
+  <ASSET>
+    <KEY><![CDATA[towel_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.98788,-1.55632,2.60358]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/towel_1.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+  </ASSET>
+
+  <!-- drawers_1-->
+  <ASSET>
+    <KEY><![CDATA[drawers_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-3.90181,-4.82652,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/drawers_1.glb]]></URL>
+  </ASSET>
+
+  <!-- tub_standard_collection-->
+  <ASSET>
+    <KEY><![CDATA[tub_standard_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/tub_standard_collection.glb]]></URL>
+    
+  </ASSET>
+
+  <!-- bath_doors_standard_collection-->
+  <ASSET>
+    <KEY><![CDATA[bath_doors_standard_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/bath_doors_standard_collection.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[doors]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[tub_standard]]></VARIANT_KEY>
+  </ASSET>
+
+  <!-- tub_soaker_collection-->
+  <ASSET>
+    <KEY><![CDATA[tub_soaker_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/tub_soaker_collection.glb]]></URL>
+    
+  </ASSET>
+
+
+
+
+  <!-- bath_doors_soakers_collection-->
+  <ASSET>
+    <KEY><![CDATA[bath_doors_soaker_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/bath_doors_soaker_collection.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[doors]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[tub_soaker]]></VARIANT_KEY>
+  </ASSET>
+  
+
+
+  <!-- room_collection_left-->
+  <ASSET>
+    <KEY><![CDATA[room_collection_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>   
+  </ASSET>
+
+  <!-- room_collection_right-->
+  <ASSET>
+    <KEY><![CDATA[room_collection_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[-0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- wainscoting_left-->
+  <ASSET>
+    <KEY><![CDATA[wainscoting_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wainscoting_left.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+  </ASSET>
+
+  <!-- wainscoting_right-->
+  <ASSET>
+    <KEY><![CDATA[wainscoting_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wainscoting_right.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+  </ASSET>
+
+  <!-- wainscoting_left_2-->
+  <ASSET>
+    <KEY><![CDATA[wainscoting_left_2]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wainscoting_left_2.glb]]></URL>
+   
+  </ASSET>
+
+  <!-- wainscoting_right_2-->
+  <ASSET>
+    <KEY><![CDATA[wainscoting_right_2]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wainscoting_right_2.glb]]></URL>
+   
+  </ASSET>
+
+  <!-- faucet_T17438_collection-->
+  <ASSET>
+    <KEY><![CDATA[faucet_T17438_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/faucet_T17438_collection.glb]]></URL>
+    <PARENT><![CDATA[faucet_collection]]></PARENT>
+  </ASSET>
+
+
+  <!-- T17438_control-->
+  <ASSET>
+    <KEY><![CDATA[T17438_control]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.42674]]></L>
+      </DEFAULT>
+      <SHOWERS>
+        <L><![CDATA[-1.5,0,2]]></L>
+      </SHOWERS>
+    </TRANSFORM>    
+  </ASSET>
+
+  <!-- T17438_head-->
+  <ASSET>
+    <KEY><![CDATA[T17438_head]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.52348]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17438_spout-->
+  <ASSET>
+    <KEY><![CDATA[T17438_spout]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.09312]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <VISIBILITY_FILTER><![CDATA[showers]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+
+  <!-- faucet_T17464_collection-->
+  <ASSET>
+    <KEY><![CDATA[faucet_T17464_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/faucet_T17464_collection.glb]]></URL>
+    <PARENT><![CDATA[faucet_collection]]></PARENT>
+  </ASSET>
+
+
+  <!-- T17464_control-->
+  <ASSET>
+    <KEY><![CDATA[T17464_control]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.42674]]></L>
+      </DEFAULT>
+      <SHOWERS>
+        <L><![CDATA[-1.5,0,2]]></L>
+      </SHOWERS>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17464_head-->
+  <ASSET>
+    <KEY><![CDATA[T17464_head]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.52348]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17464_spout-->
+  <ASSET>
+    <KEY><![CDATA[T17464_spout]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.0868]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <VISIBILITY_FILTER><![CDATA[showers]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+
+  <!-- faucet_T17464-I_collection-->
+  <ASSET>
+    <KEY><![CDATA[faucet_T17464-I_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/faucet_T17464-I_collection.glb]]></URL>
+    <PARENT><![CDATA[faucet_collection]]></PARENT>
+    
+  </ASSET>
+
+
+  <!-- T17464-I_control-->
+  <ASSET>
+    <KEY><![CDATA[T17464-I_control]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.42674]]></L>
+      </DEFAULT>
+      <SHOWERS>
+        <L><![CDATA[-1.5,0,2]]></L>
+      </SHOWERS>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17464-I_cradle-->
+  <ASSET>
+    <KEY><![CDATA[T17464-I_cradle]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.5252]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17464-I_head_cradle-->
+  <ASSET>
+    <KEY><![CDATA[T17464-I_head_cradle]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.5252]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17464-I_head_slide_left-->
+  <ASSET>
+    <KEY><![CDATA[T17464-I_head_slide_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.3975,-0.241032,2.72376]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17464-I_head_slide_right-->
+  <ASSET>
+    <KEY><![CDATA[T17464-I_head_slide_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.3975,0.241032,2.72376]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17464-I_spout-->
+  <ASSET>
+    <KEY><![CDATA[T17464-I_spout]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.0868]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <VISIBILITY_FILTER><![CDATA[showers]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+  <!-- faucet_T17494-I_collection-->
+  <ASSET>
+    <KEY><![CDATA[faucet_T17494-I_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/faucet_T17494-I_collection.glb]]></URL>
+    <PARENT><![CDATA[faucet_collection]]></PARENT>
+    
+  </ASSET>
+  
+  <!-- T17494-I_control-->
+  <ASSET>
+    <KEY><![CDATA[T17494-I_control]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.4344]]></L>
+      </DEFAULT>
+      <SHOWERS>
+        <L><![CDATA[-1.5,0,2]]></L>
+      </SHOWERS>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17494-I_cradle-->
+  <ASSET>
+    <KEY><![CDATA[T17494-I_cradle]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.52348]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17494-I_head_cradle-->
+  <ASSET>
+    <KEY><![CDATA[T17494-I_head_cradle]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.52348]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17494-I_head_slide_left-->
+  <ASSET>
+    <KEY><![CDATA[T17494-I_head_slide_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.3975,-0.241032,2.72376]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17494-I_head_slide_right-->
+  <ASSET>
+    <KEY><![CDATA[T17494-I_head_slide_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.3975,0.241032,2.72376]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17494-I_spout-->
+  <ASSET>
+    <KEY><![CDATA[T17494-I_spout]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.09312]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <VISIBILITY_FILTER><![CDATA[showers]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- faucet_T17453_collection-->
+  <ASSET>
+    <KEY><![CDATA[faucet_T17453_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/faucet_T17453_collection.glb]]></URL>
+    <PARENT><![CDATA[faucet_collection]]></PARENT>
+  </ASSET>
+
+
+  <!-- T17453_control-->
+  <ASSET>
+    <KEY><![CDATA[T17453_control]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.42674]]></L>
+      </DEFAULT>
+      <SHOWERS>
+        <L><![CDATA[-1.5,0,2]]></L>
+      </SHOWERS>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T17453_spout-->
+  <ASSET>
+    <KEY><![CDATA[T17453_spout]]></KEY>
+
+    <VISIBILITY_FILTER><![CDATA[showers]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+
+  <!-- faucet_T27959_collection-->
+  <ASSET>
+    <KEY><![CDATA[faucet_T27959_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/faucet_T27959_collection.glb]]></URL>
+    <PARENT><![CDATA[faucet_collection]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[tubs]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+  <!-- T27959_control-->
+  <ASSET>
+    <KEY><![CDATA[T27959_control]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,1.42674]]></L>
+      </DEFAULT>
+      <SHOWERS>
+        <L><![CDATA[-1.5,0,2]]></L>
+      </SHOWERS>
+    </TRANSFORM>
+  </ASSET>
+
+  <!-- T27959_spout-->
+  <ASSET>
+    <KEY><![CDATA[T27959_spout]]></KEY>
+    
+    <VISIBILITY_FILTER><![CDATA[showers]]></VISIBILITY_FILTER>
+  </ASSET>
+  
+  
+  
+
+
+  <!-- head_cradle_hose_left-->
+  <ASSET>
+    <KEY><![CDATA[head_cradle_hose_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.52348]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/head_cradle_hose_left.glb]]></URL>
+    <PARENT><![CDATA[faucet_extras]]></PARENT>
+  </ASSET>
+
+  <!-- head_cradle_hose_right-->
+  <ASSET>
+    <KEY><![CDATA[head_cradle_hose_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.52348]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/head_cradle_hose_right.glb]]></URL>
+    <PARENT><![CDATA[faucet_extras]]></PARENT>
+  </ASSET>
+
+  <!-- head_slide_hose_left-->
+  <ASSET>
+    <KEY><![CDATA[head_slide_hose_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.52348]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/head_slide_hose_left.glb]]></URL>
+    <PARENT><![CDATA[faucet_extras]]></PARENT>
+  </ASSET>
+
+  <!-- head_slide_hose_right-->
+  <ASSET>
+    <KEY><![CDATA[head_slide_hose_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0,3.52348]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/head_slide_hose_right.glb]]></URL>
+    <PARENT><![CDATA[faucet_extras]]></PARENT>
+  </ASSET>
+
+  <!-- faucet_extras-->
+  <ASSET>
+    <KEY><![CDATA[faucet_extras]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>   
+  </ASSET>
+
+  <!-- tub_elite_2653_collection-->
+  <ASSET>
+    <KEY><![CDATA[tub_elite_2653_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/tub_elite_2653_collection.glb]]></URL>
+   
+   
+  </ASSET>
+
+  <!-- tub_elite_2852_collection-->
+  <ASSET>
+    <KEY><![CDATA[tub_elite_2852_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/tub_elite_2852_collection.glb]]></URL>
+    
+
+  </ASSET>
+
+  <!-- tub_elite_3053_collection-->
+  <ASSET>
+    <KEY><![CDATA[tub_elite_3053_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/tub_elite_3053_collection.glb]]></URL>
+    
+
+  </ASSET>
+
+  <!-- shelf_left_1-->
+  <ASSET>
+    <KEY><![CDATA[shelf_left_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0.835369,1.59509]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shelf_left_1.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+
+  </ASSET>
+
+  <!-- shelf_left_2-->
+  <ASSET>
+    <KEY><![CDATA[shelf_left_2]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0.835369,2.16601]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shelf_left_2.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+
+  </ASSET>
+
+  <!-- shelf_left_3-->
+  <ASSET>
+    <KEY><![CDATA[shelf_left_3]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.5,0.835369,2.69928]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shelf_left_3.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+
+  </ASSET>
+
+
+  <!-- shelf_right_1-->
+  <ASSET>
+    <KEY><![CDATA[shelf_right_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[1.5,0.835369,1.59509]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shelf_right_1.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+
+  </ASSET>
+
+  <!-- shelf_right_2-->
+  <ASSET>
+    <KEY><![CDATA[shelf_right_2]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[1.5,0.835369,2.16601]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shelf_right_2.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+
+  </ASSET>
+
+  <!-- shelf_right_3-->
+  <ASSET>
+    <KEY><![CDATA[shelf_right_3]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[1.5,0.835369,2.69928]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shelf_right_3.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+  </ASSET>
+
+  <!-- grab_bar_center-->
+  <ASSET>
+    <KEY><![CDATA[grab_bar_center]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0.001968,0.835368,1.7979]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/grab_bar_center.glb]]></URL>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+  </ASSET>
+
+  <!-- grab_bar_left-->
+  <ASSET>
+    <KEY><![CDATA[grab_bar_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[-1.49972,-0.515928,2.23565]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/grab_bar_left.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+  </ASSET>
+
+  <!-- grab_bar_right-->
+  <ASSET>
+    <KEY><![CDATA[grab_bar_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[1.49972,-0.515928,2.23565]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/grab_bar_right.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <VISIBILITY_FILTER><![CDATA[walkintubs]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+  <!-- shower_collection-->
+  <ASSET>
+    <KEY><![CDATA[shower_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>      
+    </TRANSFORM>
+    <VISIBILITY_FILTER><![CDATA[tubs]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+  <!-- corner_seat-->
+  <ASSET>
+    <KEY><![CDATA[corner_seat]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+     
+      <SHOWER_X48>
+        <L><![CDATA[-0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>   
+    <URL><![CDATA[assets/glb/corner_seat.glb]]></URL>   
+    <PARENT><![CDATA[shower_collection]]></PARENT>
+  </ASSET>
+
+  <!-- shower_chair-->
+  <ASSET>
+    <KEY><![CDATA[shower_chair]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+     
+      <SHOWER_X48>
+        <L><![CDATA[-0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shower_chair.glb]]></URL>   
+    <PARENT><![CDATA[shower_collection]]></PARENT>
+  </ASSET>
+
+  <!-- foot_rest-->
+  <ASSET>
+    <KEY><![CDATA[foot_rest]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+
+      <SHOWER_X48>
+        <L><![CDATA[0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/foot_rest.glb]]></URL>
+    <PARENT><![CDATA[shower_collection]]></PARENT>
+  </ASSET>
+
+  <!-- shower_bench-->
+  <ASSET>
+    <KEY><![CDATA[shower_bench]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+     
+      <SHOWER_X48>
+        <L><![CDATA[-0.29,0,0]]></L>
+      </SHOWER_X48>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shower_bench.glb]]></URL>   
+    <PARENT><![CDATA[shower_collection]]></PARENT>
+  </ASSET>
+
+  <!-- shower_roof-->
+  <ASSET>
+    <KEY><![CDATA[shower_roof]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shower_roof.glb]]></URL>
+    <VISIBILITY_FILTER><![CDATA[WALLS_3-4]]></VISIBILITY_FILTER>
+  </ASSET>
+
+  <!-- wall_interior_accent_window_center-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_accent_window_center]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,-0.170112.]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_accent_window_center.glb]]></URL>
+    <ASSET_GROUP><![CDATA[accent_3-4_group]]></ASSET_GROUP>
+
+    <VARIANT_GROUP><![CDATA[accents]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[accent_3-4_group]]></VARIANT_ASSET_GROUP>
+    
+    <ASSET_GROUP><![CDATA[wall_interior_3-4_group]]></ASSET_GROUP>
+  </ASSET>
+
+  <!-- wall_interior_accent_window_center_2-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_accent_window_center_2]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,-0.170112.]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_accent_window_center_2.glb]]></URL>
+    <ASSET_GROUP><![CDATA[accent_3-4_group]]></ASSET_GROUP>
+
+    <VARIANT_GROUP><![CDATA[accents]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[accent_3-4_group]]></VARIANT_ASSET_GROUP>
+
+
+    <ASSET_GROUP><![CDATA[wall_interior_3-4_group]]></ASSET_GROUP>
+    <VISIBILITY_FILTER><![CDATA[window]]></VISIBILITY_FILTER>
+  </ASSET>
+  
+
+  <!-- wall_interior_accent_center-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_accent_center]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,-0.170112]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_accent_center.glb]]></URL>
+    <ASSET_GROUP><![CDATA[accent_full_group]]></ASSET_GROUP>
+    
+     <VARIANT_GROUP><![CDATA[accents]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[accent_full_group]]></VARIANT_ASSET_GROUP>
+    
+    
+    <ASSET_GROUP><![CDATA[wall_interior_full_group]]></ASSET_GROUP>
+  </ASSET>
+
+  <!-- wall_interior_accent_window_right-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_accent_window_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,-0.170112]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_accent_window_right.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <ASSET_GROUP><![CDATA[accent_3-4_group]]></ASSET_GROUP>
+
+    <VARIANT_GROUP><![CDATA[accents]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[accent_3-4_group]]></VARIANT_ASSET_GROUP>
+
+    <ASSET_GROUP><![CDATA[wall_interior_3-4_group]]></ASSET_GROUP>
+   
+  </ASSET>
+
+  <!-- wall_interior_accent_right-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_accent_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,-0.170112]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_accent_right.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <ASSET_GROUP><![CDATA[accent_full_group]]></ASSET_GROUP>
+
+    <VARIANT_GROUP><![CDATA[accents]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[accent_full_group]]></VARIANT_ASSET_GROUP>
+
+    <ASSET_GROUP><![CDATA[wall_interior_full_group]]></ASSET_GROUP>
+  </ASSET>
+
+  <!-- wall_interior_accent_window_left-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_accent_window_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,-0.170112]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_accent_window_left.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <ASSET_GROUP><![CDATA[accent_3-4_group]]></ASSET_GROUP>
+
+    <VARIANT_GROUP><![CDATA[accents]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[accent_3-4_group]]></VARIANT_ASSET_GROUP>
+
+    <ASSET_GROUP><![CDATA[wall_interior_3-4_group]]></ASSET_GROUP>
+  </ASSET>
+
+  <!-- wall_interior_accent_left-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_accent_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,-0.170112]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_accent_left.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <ASSET_GROUP><![CDATA[accent_full_group]]></ASSET_GROUP>
+
+    <VARIANT_GROUP><![CDATA[accents]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[accent_full_group]]></VARIANT_ASSET_GROUP>
+
+    <ASSET_GROUP><![CDATA[wall_interior_full_group]]></ASSET_GROUP>
+  </ASSET>
+
+
+  <!-- wall_inner_mould_roof_center-->
+  <ASSET>
+    <KEY><![CDATA[wall_inner_mould_roof_center]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <WALLS_3-4>
+        <L><![CDATA[0,0,-0.73]]></L>
+      </WALLS_3-4>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_inner_mould_roof_center.glb]]></URL>
+    <ASSET_GROUP><![CDATA[roof_mould]]></ASSET_GROUP>
+  </ASSET>
+
+  <!-- wall_inner_mould_roof_right-->
+  <ASSET>
+    <KEY><![CDATA[wall_inner_mould_roof_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <WALLS_3-4>
+        <L><![CDATA[0,0,-0.73]]></L>
+      </WALLS_3-4>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_inner_mould_roof_right.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <ASSET_GROUP><![CDATA[roof_mould]]></ASSET_GROUP>
+  </ASSET>
+
+  <!-- wall_inner_mould_roof_left-->
+  <ASSET>
+    <KEY><![CDATA[wall_inner_mould_roof_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+      <WALLS_3-4>
+        <L><![CDATA[0,0,-0.73]]></L>
+      </WALLS_3-4>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_inner_mould_roof_left.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <ASSET_GROUP><![CDATA[roof_mould]]></ASSET_GROUP>
+  </ASSET>
+
+ 
+
+  <!-- wall_exterior_shell_right-->
+  <ASSET>
+    <KEY><![CDATA[wall_exterior_shell_right]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_exterior_shell_right.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+  </ASSET>
+
+  <!-- wall_exterior_shell_left-->
+  <ASSET>
+    <KEY><![CDATA[wall_exterior_shell_left]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_exterior_shell_left.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+  </ASSET>
+
+  <!-- shower_threshold-->
+  <ASSET>
+    <KEY><![CDATA[shower_threshold]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0.117528,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shower_threshold.glb]]></URL>
+    <ASSET_GROUP><![CDATA[shower_x60_collection]]></ASSET_GROUP>
+    <ASSET_GROUP><![CDATA[shower_x48_collection]]></ASSET_GROUP>
+    <PARENT><![CDATA[shower_collection]]></PARENT>
+   
+  </ASSET>
+
+  <!-- shower_floor_x60-->
+  <ASSET>
+    <KEY><![CDATA[shower_floor_x60]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+     
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shower_floor_x60.glb]]></URL>
+    <ASSET_GROUP><![CDATA[shower_x60_collection]]></ASSET_GROUP>
+    <PARENT><![CDATA[shower_collection]]></PARENT>
+
+  </ASSET>
+
+  <!-- shower_floor_x48-->
+  <ASSET>
+    <KEY><![CDATA[shower_floor_x48]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+     
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shower_floor_x48.glb]]></URL>
+    <ASSET_GROUP><![CDATA[shower_x48_collection]]></ASSET_GROUP>
+    <PARENT><![CDATA[shower_collection]]></PARENT>
+
+  </ASSET>
+
+  <!-- soffit-->
+  <ASSET>
+    <KEY><![CDATA[soffit]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/soffit.glb]]></URL>
+    <ASSET_GROUP><![CDATA[wall_interior_3-4_group]]></ASSET_GROUP>
+
+  </ASSET>
+
+  <!-- soap_1-->
+  <ASSET>
+    <KEY><![CDATA[soap_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0.835368,1.80173]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/soap_1.glb]]></URL>
+
+  </ASSET>
+
+  <!-- soap_2-->
+  <ASSET>
+    <KEY><![CDATA[soap_2]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0.835368,1.80173]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/soap_2.glb]]></URL>
+
+  </ASSET>
+
+  <!-- window-->
+  <ASSET>
+    <KEY><![CDATA[window]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,-0.170112]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/window.glb]]></URL>
+
+  </ASSET>
+ 
+
+  <!-- shower_doors_x60_collection-->
+  <ASSET>
+    <KEY><![CDATA[shower_doors_x60_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shower_doors_x60_collection.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[doors]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[shower_x60]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!--shower_doors_x48_collection-->
+  <ASSET>
+    <KEY><![CDATA[shower_doors_x48_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/shower_doors_x48_collection.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[doors]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[shower_x48]]></VARIANT_KEY>
+  </ASSET>
+
+  <!-- curtain_bar_bath_x60_curved_long-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_bath_x60_curved_long]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_bath_x60_curved_long.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_curved]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[tub_standard]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- curtain_bar_bath_x60_curved_short-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_bath_x60_curved_short]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_bath_x60_curved_short.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_curved]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[tub_soaker]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- curtain_bar_bath_x60_straight_long-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_bath_x60_straight_long]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_bath_x60_straight_long.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_straight]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[tub_standard]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- curtain_bar_bath_x60_straight_short-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_bath_x60_straight_short]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_bath_x60_straight_short.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_straight]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[tub_soaker]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- curtain_bar_shower_x48_curved-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_shower_x48_curved]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_shower_x48_curved.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_curved]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[shower_x48]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- curtain_bar_shower_x48_straight-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_shower_x48_straight]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_shower_x48_straight.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_straight]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[shower_x48]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- curtain_bar_shower_x60_curved-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_shower_x60_curved]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_shower_x60_curved.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_curved]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[shower_x60]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- curtain_bar_shower_x60_straight-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_shower_x60_straight]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_shower_x60_straight.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_straight]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[shower_x60]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- wall_interior_center_full -->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_full]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_full.glb]]></URL>
+  
+    <VARIANT_GROUP><![CDATA[inner_wall_regular]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+    
+
+  </ASSET>
+
+  <!-- wall_interior_center_3-4 -->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_3-4]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_3-4.glb]]></URL>
+   
+    <VARIANT_GROUP><![CDATA[inner_wall_regular]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+  
+
+  </ASSET>
+
+  <!-- wall_interior_center_full_soap_1-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_full_soap_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_full_soap_1.glb]]></URL>
+    
+    <VARIANT_GROUP><![CDATA[inner_wall_soap_1]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!-- wall_interior_center_full_soap_1_window-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_full_soap_1_window]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_full_soap_1_window.glb]]></URL>
+   
+    <VARIANT_GROUP><![CDATA[inner_wall_soap_1_window]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!-- wall_interior_center_3-4_soap_1-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_3-4_soap_1]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_3-4_soap_1.glb]]></URL>
+   
+    <VARIANT_GROUP><![CDATA[inner_wall_soap_1]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!-- wall_interior_center_3-4_soap_1_window-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_3-4_soap_1_window]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_3-4_soap_1_window.glb]]></URL>
+   
+    <VARIANT_GROUP><![CDATA[inner_wall_soap_1_window]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!--wall_interior_center_full_soap_2-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_full_soap_2]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_full_soap_2.glb]]></URL>
+   
+    <VARIANT_GROUP><![CDATA[inner_wall_soap_2]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!--wall_interior_center_full_soap_2_window-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_full_soap_2_window]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_full_soap_2_window.glb]]></URL>
+  
+    <VARIANT_GROUP><![CDATA[inner_wall_soap_2_window]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!--wall_interior_center_3-4_soap_2-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_3-4_soap_2]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_3-4_soap_2.glb]]></URL>
+   
+    <VARIANT_GROUP><![CDATA[inner_wall_soap_2]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!--wall_interior_center_3-4_soap_2_window-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_3-4_soap_2_window]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_3-4_soap_2_window.glb]]></URL>
+   
+    <VARIANT_GROUP><![CDATA[inner_wall_soap_2_window]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+  
+
+  </ASSET>
+
+  <!--wall_interior_center_full_window-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_full_window]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_full_window.glb]]></URL>
+  
+    <VARIANT_GROUP><![CDATA[inner_wall_window]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!--wall_interior_center_3-4_window-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_center_3-4_window]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_center_3-4_window.glb]]></URL>
+  
+    <VARIANT_GROUP><![CDATA[inner_wall_window]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+   
+
+  </ASSET>
+
+  <!-- wall_inner_mould_left_full-->
+  <ASSET>
+    <KEY><![CDATA[wall_inner_mould_left_full]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_inner_mould_left_full.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <ASSET_GROUP><![CDATA[wall_interior_full_trim]]></ASSET_GROUP>    
+    <VARIANT_GROUP><![CDATA[wall_interior_trim]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[wall_interior_full_trim]]></VARIANT_ASSET_GROUP>
+  </ASSET>
+
+  <!-- wall_inner_mould_left_3-4-->
+  <ASSET>
+    <KEY><![CDATA[wall_inner_mould_left_3-4]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_inner_mould_left_3-4.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+    <ASSET_GROUP><![CDATA[wall_interior_3-4_trim]]></ASSET_GROUP>
+  
+    <VARIANT_GROUP><![CDATA[wall_interior_trim]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[wall_interior_3-4_trim]]></VARIANT_ASSET_GROUP>
+  </ASSET>
+
+  
+
+  <!-- wall_inner_mould_right_full-->
+  <ASSET>
+    <KEY><![CDATA[wall_inner_mould_right_full]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_inner_mould_right_full.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <ASSET_GROUP><![CDATA[wall_interior_full_trim]]></ASSET_GROUP>
+   
+    <VARIANT_GROUP><![CDATA[wall_interior_trim]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[wall_interior_full_trim]]></VARIANT_ASSET_GROUP>
+  </ASSET>
+
+  <!-- wall_inner_mould_right_3-4-->
+  <ASSET>
+    <KEY><![CDATA[wall_inner_mould_right_3-4]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_inner_mould_right_3-4.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <ASSET_GROUP><![CDATA[wall_interior_3-4_trim]]></ASSET_GROUP>
+    
+    <VARIANT_GROUP><![CDATA[wall_interior_trim]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[wall_interior_3-4_trim]]></VARIANT_ASSET_GROUP>
+  </ASSET>
+
+
+  <!-- wall_interior_left_full-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_left_full]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_left_full.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+
+    <ASSET_GROUP><![CDATA[inner_wall_sides_full]]></ASSET_GROUP>
+    <VARIANT_GROUP><![CDATA[inner_wall_sides]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[inner_wall_sides_full]]></VARIANT_ASSET_GROUP>
+   
+
+  </ASSET>
+
+  <!-- wall_interior_left_3-4-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_left_3-4]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_left_3-4.glb]]></URL>
+    <PARENT><![CDATA[room_collection_left]]></PARENT>
+
+    <ASSET_GROUP><![CDATA[inner_wall_sides_3-4]]></ASSET_GROUP>
+    <VARIANT_GROUP><![CDATA[inner_wall_sides]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[inner_wall_sides_3-4]]></VARIANT_ASSET_GROUP>
+
+  </ASSET>
+
+  <!-- wall_interior_right_full-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_right_full]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_right_full.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+
+    <ASSET_GROUP><![CDATA[inner_wall_sides_full]]></ASSET_GROUP>
+    <VARIANT_GROUP><![CDATA[inner_wall_sides]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_FULL]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[inner_wall_sides_full]]></VARIANT_ASSET_GROUP>
+    
+  </ASSET>
+
+  <!-- wall_interior_right_3-4-->
+  <ASSET>
+    <KEY><![CDATA[wall_interior_right_3-4]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <L><![CDATA[0,0,0]]></L>
+      </DEFAULT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/wall_interior_right_3-4.glb]]></URL>
+    <PARENT><![CDATA[room_collection_right]]></PARENT>
+    <ASSET_GROUP><![CDATA[inner_wall_sides_3-4]]></ASSET_GROUP>
+    <VARIANT_GROUP><![CDATA[inner_wall_sides]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[WALLS_3-4]]></VARIANT_KEY>
+    <VARIANT_ASSET_GROUP><![CDATA[inner_wall_sides_3-4]]></VARIANT_ASSET_GROUP>
+  
+  </ASSET>
+
+
+
+  <!-- tuscon_door_shower_x60_collection-->
+  <ASSET>
+    <KEY><![CDATA[tuscon_door_shower_x60_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S_NEGATE_X>true</S_NEGATE_X>
+      </HORIZONTAL_INVERT>
+      <TUSCON_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </TUSCON_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/tuscon_door_shower_x60_collection.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[doors_tuscon]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[shower_x60]]></VARIANT_KEY>
+    <VISIBILITY_FILTER><![CDATA[tubs]]></VISIBILITY_FILTER>
+
+  </ASSET>
+
+  <!--tuscan_door_shower_x48_collection-->
+  <ASSET>
+    <KEY><![CDATA[tuscan_door_shower_x48_collection]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S_NEGATE>true</S_NEGATE>
+      </HORIZONTAL_INVERT>
+      <TUSCON_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </TUSCON_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/tuscan_door_shower_x48_collection.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[doors_tuscon]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[shower_x48]]></VARIANT_KEY>
+    <VISIBILITY_FILTER><![CDATA[tubs]]></VISIBILITY_FILTER>
+  </ASSET>
+
+
+ 
+
+  
+
+
+
+
+
+
+</ROOT>
+
+
+
+
+
