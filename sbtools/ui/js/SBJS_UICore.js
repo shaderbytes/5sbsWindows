@@ -982,6 +982,7 @@ SBJS_UICore.UIItemButton = function() {
     SBJS_UICore.UIItem.call(this);   
     this.isSelected = false;
     this.toggleSelectedState = true;
+    this.alwaystriggerOnInternalTrigger = false;
     this.selectionGroup;
     this.hilight = undefined;
     
@@ -1001,6 +1002,14 @@ var UIItemButtonPrototype = {
             if(!this.toggleSelectedState){
                 //if false you dont care about the button state
                 this.domElementContentJQ.trigger(this.EVENT_DOM_CLICK);
+            }else if(this.alwaystriggerOnInternalTrigger){
+
+                if(this.isSelected === true){
+                    //invert the state before trigger so it results in the same state it was in
+                    this.isSelected = !this.isSelected;                    
+                }
+                this.domElementContentJQ.trigger(this.EVENT_DOM_CLICK);
+            
             }else{
                 //if true check the data to know if to keep state (invert state before trigger) or just trigger ( which will invert the state)
                 if(event.data.keepState){

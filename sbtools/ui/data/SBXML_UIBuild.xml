@@ -469,7 +469,7 @@
       <GROUP key="0">
         <PROPERTY>
           <KEY><![CDATA[multiSelect]]></KEY>
-          <VALUE><![CDATA[true]]></VALUE>
+          <VALUE><![CDATA[false]]></VALUE>
           <TYPE><![CDATA[boolean]]></TYPE>
         </PROPERTY>
         
@@ -5539,10 +5539,11 @@
                 <VALUE><![CDATA[false]]></VALUE>
                 <TYPE><![CDATA[boolean]]></TYPE>
               </PROPERTY>
-              
+
              
               
-                 <INTERACTION_HOOK>
+
+              <INTERACTION_HOOK>
                   <NAME><![CDATA[click]]></NAME>
                   <FUNCTION><![CDATA[setAssetVisibilityWithVariant]]></FUNCTION>
 
@@ -25648,172 +25649,7 @@
 
            
 
-            <!-- Accent Trim****************************************************************** -->
-
-            <UII>
-              <TYPE><![CDATA[UIItemAccordian]]></TYPE>
-              <VISIBILITY_FILTER>
-                <PROPERTY>
-                  <KEY><![CDATA[name]]></KEY>
-                  <VALUE><![CDATA[inner_wall]]></VALUE>
-                  <TYPE><![CDATA[string]]></TYPE>
-                </PROPERTY>
-                <PROPERTY>
-                  <KEY><![CDATA[inverted]]></KEY>
-                  <VALUE><![CDATA[true]]></VALUE>
-                  <TYPE><![CDATA[boolean]]></TYPE>
-                </PROPERTY>
-                <PROPERTY>
-                  <KEY><![CDATA[value]]></KEY>
-                  <VALUE><![CDATA[vintagespruce]]></VALUE>
-                  <TYPE><![CDATA[string]]></TYPE>
-                </PROPERTY>
-              </VISIBILITY_FILTER>
-
-              <PROPERTY>
-                <KEY><![CDATA[isSelected]]></KEY>
-                <VALUE><![CDATA[false]]></VALUE>
-                <TYPE><![CDATA[boolean]]></TYPE>
-              </PROPERTY>
-
-              <HEADER>
-                <UII>
-                  <TYPE><![CDATA[UIItemButton]]></TYPE>
-                  <CSS><![CDATA[ui-item-button-2]]></CSS>
-
-                  <INTERACTION_HOOK>
-                    <NAME><![CDATA[click]]></NAME>
-                    <FUNCTION><![CDATA[setAssetVisibilityWithVariant]]></FUNCTION>
-
-                    <!--variantKey must  be a match to a visibility key-->
-                    <DATA>
-                      <PROPERTY>
-                        <KEY><![CDATA[variantGroup]]></KEY>
-                        <VALUE><![CDATA[accents]]></VALUE>
-                        <TYPE><![CDATA[string]]></TYPE>
-                      </PROPERTY>
-                    </DATA>
-
-                  </INTERACTION_HOOK>
-                  <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[vintagespruce_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
-
-
-                  <LABEL>
-                    <UII>
-                      <TYPE><![CDATA[UIItemLabel]]></TYPE>
-                      <CSS><![CDATA[ui-item-p-2]]></CSS>
-                      <VALUE><![CDATA[Accent Trim]]></VALUE>
-                      <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-                    </UII>
-                  </LABEL>
-
-                  <ICON>
-                    <UII>
-                      <TYPE><![CDATA[UIItemIcon]]></TYPE>
-                      <CSS><![CDATA[ui-item-icon-2]]></CSS>
-                      <CHILDREN>
-                        <UII>
-                          <TYPE><![CDATA[UIDiv]]></TYPE>
-                          <CSS><![CDATA[ui-item-icon-mask-2]]></CSS>
-                          <MAP_TO_PROPERTY><![CDATA[mask]]></MAP_TO_PROPERTY>
-                        </UII>
-                      </CHILDREN>
-                      <URL>6</URL>
-                      <URL>7</URL>
-                    </UII>
-                  </ICON>
-
-                </UII>
-              </HEADER>
-              <CHILDREN>
-
-
-                <!-- BUTTON OPTION 1****************************************************************** -->
-
-                <UII>
-                  <TYPE><![CDATA[UIItemButton]]></TYPE>
-
-                  <!--optional tag group is not required use only if grouping is needed-->
-                  <SELECTION_GROUP>57</SELECTION_GROUP>
-                  <CSS><![CDATA[ui-item-button-6]]></CSS>
-
-                  <PROPERTY>
-                    <KEY><![CDATA[isSelected]]></KEY>
-                    <VALUE><![CDATA[true]]></VALUE>
-                    <TYPE><![CDATA[boolean]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[useParentStateNotification]]></KEY>
-                    <VALUE><![CDATA[true]]></VALUE>
-                    <TYPE><![CDATA[boolean]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[hilight]]></KEY>
-                    <VALUE><![CDATA[action1]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-
-
-                  <INTERACTION_HOOK>
-                    <NAME><![CDATA[click]]></NAME>
-                    <FUNCTION><![CDATA[setSentrelImageSource]]></FUNCTION>
-                    <DATA>
-                      <PROPERTY>
-                        <KEY><![CDATA[url_accent]]></KEY>
-                        <VALUE>190</VALUE>
-                        <TYPE><![CDATA[string]]></TYPE>
-                      </PROPERTY>
-                    </DATA>
-                  </INTERACTION_HOOK>
-
-                  <INTERACTION_HOOK>
-                    <NAME><![CDATA[click]]></NAME>
-                    <FUNCTION><![CDATA[setSentrelTextureAccent]]></FUNCTION>
-                    <DATA>
-                      <PROPERTY>
-                        <KEY><![CDATA[assetTargetKey]]></KEY>
-                        <VALUE><![CDATA[wall_interior_accent]]></VALUE>
-                        <TYPE><![CDATA[string]]></TYPE>
-                      </PROPERTY>
-                      <PROPERTY>
-                        <KEY><![CDATA[channel]]></KEY>
-                        <VALUE><![CDATA[albedoTexture]]></VALUE>
-                        <TYPE><![CDATA[string]]></TYPE>
-                      </PROPERTY>
-                    </DATA>
-                  </INTERACTION_HOOK>
-
-
-                  <LABEL>
-                    <UII>
-                      <TYPE><![CDATA[UIItemLabel]]></TYPE>
-                      <CSS><![CDATA[ui-item-p-5]]></CSS>
-                      <VALUE><![CDATA[Option 1]]></VALUE>
-                      <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-                    </UII>
-                  </LABEL>
-
-                  <ICON>
-                    <UII>
-                      <TYPE><![CDATA[UIItemIcon]]></TYPE>
-                      <CSS><![CDATA[ui-item-icon-2]]></CSS>
-                      <CHILDREN>
-                        <UII>
-                          <TYPE><![CDATA[UIDiv]]></TYPE>
-                          <CSS><![CDATA[ui-item-icon-mask-2]]></CSS>
-                          <MAP_TO_PROPERTY><![CDATA[mask]]></MAP_TO_PROPERTY>
-                        </UII>
-                      </CHILDREN>
-                      <URL>8</URL>
-                      <URL>9</URL>
-                    </UII>
-                  </ICON>
-
-                </UII>
-
-
-              </CHILDREN>
-            </UII>
+         
 
           </CHILDREN>
         </UII>
@@ -34592,8 +34428,13 @@
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
                 </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
+                </PROPERTY>
 
-
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[whitestandard_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
                 <COLOR><![CDATA[#DDDDDD]]></COLOR>
@@ -34640,6 +34481,11 @@
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
                 </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
+                </PROPERTY>
                 <COLOR><![CDATA[#92959A]]></COLOR>
                 <INTERACTION_HOOK>
                   <NAME><![CDATA[click]]></NAME>
@@ -34673,52 +34519,11 @@
               </UII>
 
               <!-- BUTTON #9B8E80****************************************************************** -->
+           
 
               <UII>
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
-                <SELECTION_GROUP>16</SELECTION_GROUP>
-                <CSS><![CDATA[ui-item-button-7]]></CSS>
-                <PROPERTY>
-                  <KEY><![CDATA[hilight]]></KEY>
-                  <VALUE><![CDATA[action2]]></VALUE>
-                  <TYPE><![CDATA[string]]></TYPE>
-                </PROPERTY>
-                <COLOR><![CDATA[#9B8E80]]></COLOR>
-                <INTERACTION_HOOK>
-                  <NAME><![CDATA[click]]></NAME>
-                  <FUNCTION><![CDATA[setAssetColor]]></FUNCTION>
-                  <DATA>
-                    <PROPERTY>
-                      <KEY><![CDATA[assetTargetKey]]></KEY>
-                      <VALUE><![CDATA[wall_exterior]]></VALUE>
-                      <TYPE><![CDATA[string]]></TYPE>
-                    </PROPERTY>
-                    <PROPERTY>
-                      <KEY><![CDATA[channel]]></KEY>
-                      <VALUE><![CDATA[albedoColor]]></VALUE>
-                      <TYPE><![CDATA[string]]></TYPE>
-                    </PROPERTY>
-                    <PROPERTY>
-                      <KEY><![CDATA[color]]></KEY>
-                      <VALUE><![CDATA[#9B8E80]]></VALUE>
-                      <TYPE><![CDATA[string]]></TYPE>
-                    </PROPERTY>
-                  </DATA>
-                </INTERACTION_HOOK>
-                <LABEL>
-                  <UII>
-                    <TYPE><![CDATA[UIItemLabel]]></TYPE>
-                    <CSS><![CDATA[ui-item-p-6]]></CSS>
-                    <VALUE><![CDATA[#9B8E80]]></VALUE>
-                    <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-                  </UII>
-                </LABEL>
-              </UII>
-
-              <!-- BUTTON #9B8E80****************************************************************** -->
-
-              <UII>
-                <TYPE><![CDATA[UIItemButton]]></TYPE>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[alaskanivory_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
                 
@@ -34726,6 +34531,11 @@
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#9B8E80]]></COLOR>
                 <INTERACTION_HOOK>
@@ -34765,11 +34575,17 @@
               <UII>
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[arctichaze_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#8A8785]]></COLOR>
                 <INTERACTION_HOOK>
@@ -34803,16 +34619,71 @@
                 </LABEL>
               </UII>
 
+              <!-- BUTTON #7C766C****************************************************************** -->
+
+              <UII>
+                <TYPE><![CDATA[UIItemButton]]></TYPE>
+                <SELECTION_GROUP>16</SELECTION_GROUP>
+                <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[athens_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
+                <PROPERTY>
+                  <KEY><![CDATA[hilight]]></KEY>
+                  <VALUE><![CDATA[action2]]></VALUE>
+                  <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
+                </PROPERTY>
+                <COLOR><![CDATA[#7C766C]]></COLOR>
+                <INTERACTION_HOOK>
+                  <NAME><![CDATA[click]]></NAME>
+                  <FUNCTION><![CDATA[setAssetColor]]></FUNCTION>
+                  <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[wall_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#7C766C]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                </INTERACTION_HOOK>
+                <LABEL>
+                  <UII>
+                    <TYPE><![CDATA[UIItemLabel]]></TYPE>
+                    <CSS><![CDATA[ui-item-p-6]]></CSS>
+                    <VALUE><![CDATA[#7C766C]]></VALUE>
+                    <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
+                  </UII>
+                </LABEL>
+              </UII>
+
               <!-- BUTTON #B8C0C8****************************************************************** -->
 
               <UII>
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[bardiglio_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#B8C0C8]]></COLOR>
                 <INTERACTION_HOOK>
@@ -34857,6 +34728,12 @@
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
                 </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
+                </PROPERTY>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[botticinocream_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <COLOR><![CDATA[#888383]]></COLOR>
                 <INTERACTION_HOOK>
                   <NAME><![CDATA[click]]></NAME>
@@ -34895,10 +34772,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[brecciaparadiso_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#615650]]></COLOR>
                 <INTERACTION_HOOK>
@@ -34938,10 +34821,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[calabria_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#A39F95]]></COLOR>
                 <INTERACTION_HOOK>
@@ -34982,10 +34871,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[calacattawhite_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#B9B9B9]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35025,10 +34920,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[calcuttagold_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#B4B2A8]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35068,10 +34969,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[cremabordeaux_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#53473F]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35111,10 +35018,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[cremetravertine_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#A59F9C]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35154,10 +35067,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[everest_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#92969E]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35197,10 +35116,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[frost_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#B5B5B9]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35240,10 +35165,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[goldenbeaches_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#9B8A7D]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35283,10 +35214,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[mochatravertine_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#746C65]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35327,10 +35264,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[petrafini_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#A8A39B]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35370,10 +35313,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[rainforest_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#61615A]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35414,10 +35363,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[triton_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#636B6E]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35450,19 +35405,26 @@
                   </UII>
                 </LABEL>
               </UII>
+            
 
-              <!-- BUTTON #636B6E****************************************************************** -->
+              <!-- BUTTON #A0A0A0****************************************************************** -->
 
               <UII>
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[veincutgray_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
                 </PROPERTY>
-                <COLOR><![CDATA[#636B6E]]></COLOR>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
+                </PROPERTY>
+                <COLOR><![CDATA[#A0A0A0]]></COLOR>
                 <INTERACTION_HOOK>
                   <NAME><![CDATA[click]]></NAME>
                   <FUNCTION><![CDATA[setAssetColor]]></FUNCTION>
@@ -35479,7 +35441,7 @@
                     </PROPERTY>
                     <PROPERTY>
                       <KEY><![CDATA[color]]></KEY>
-                      <VALUE><![CDATA[#636B6E]]></VALUE>
+                      <VALUE><![CDATA[#A0A0A0]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
@@ -35488,7 +35450,7 @@
                   <UII>
                     <TYPE><![CDATA[UIItemLabel]]></TYPE>
                     <CSS><![CDATA[ui-item-p-6]]></CSS>
-                    <VALUE><![CDATA[#636B6E]]></VALUE>
+                    <VALUE><![CDATA[#A0A0A0]]></VALUE>
                     <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
                   </UII>
                 </LABEL>
@@ -35500,10 +35462,16 @@
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[vintagespruce_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
+                </PROPERTY>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
                 <COLOR><![CDATA[#696360]]></COLOR>
                 <INTERACTION_HOOK>
@@ -35537,18 +35505,24 @@
                 </LABEL>
               </UII>
 
-              <!-- BUTTON #696360****************************************************************** -->
+              <!-- BUTTON #6B6B75****************************************************************** -->
 
               <UII>
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
                 <SELECTION_GROUP>16</SELECTION_GROUP>
                 <CSS><![CDATA[ui-item-button-7]]></CSS>
+                <EVENT_INTERNAL_TRIGGER_LISTENER><![CDATA[whitepearl_inner_wall]]></EVENT_INTERNAL_TRIGGER_LISTENER>
                 <PROPERTY>
                   <KEY><![CDATA[hilight]]></KEY>
                   <VALUE><![CDATA[action2]]></VALUE>
                   <TYPE><![CDATA[string]]></TYPE>
                 </PROPERTY>
-                <COLOR><![CDATA[#696360]]></COLOR>
+                <PROPERTY>
+                  <KEY><![CDATA[alwaystriggerOnInternalTrigger]]></KEY>
+                  <VALUE><![CDATA[true]]></VALUE>
+                  <TYPE><![CDATA[boolean]]></TYPE>
+                </PROPERTY>
+                <COLOR><![CDATA[#6B6B75]]></COLOR>
                 <INTERACTION_HOOK>
                   <NAME><![CDATA[click]]></NAME>
                   <FUNCTION><![CDATA[setAssetColor]]></FUNCTION>
@@ -35565,7 +35539,7 @@
                     </PROPERTY>
                     <PROPERTY>
                       <KEY><![CDATA[color]]></KEY>
-                      <VALUE><![CDATA[#696360]]></VALUE>
+                      <VALUE><![CDATA[#6B6B75]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
@@ -35574,13 +35548,11 @@
                   <UII>
                     <TYPE><![CDATA[UIItemLabel]]></TYPE>
                     <CSS><![CDATA[ui-item-p-6]]></CSS>
-                    <VALUE><![CDATA[#696360]]></VALUE>
+                    <VALUE><![CDATA[#6B6B75]]></VALUE>
                     <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
                   </UII>
                 </LABEL>
               </UII>
-
-
 
 
 
