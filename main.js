@@ -4,22 +4,22 @@ const { autoUpdater } = require('electron-updater');
 
 
 
+function checkupdates(){   
+     mainWindow.maximize();
+     mainWindow.show();
+     autoUpdater.checkForUpdatesAndNotify();
 
+}
 
 
 let mainWindow; //do this so that the window object doesn't get GC'd
 
-// First instantiate the class
+function createWindow(){
 
-
-
-// When our app is ready, we'll create our BrowserWindow
-app.on('ready', function() {
+    mainWindow = new BrowserWindow({show:false,webPreferences:{nodeIntegration :true} });
    
 
- 
-    mainWindow = new BrowserWindow({show:false,webPreferences:{nodeIntegration :true} });
-    mainWindow.maximize();
+     mainWindow.once('ready-to-show',checkupdates);
     
     // The BrowserWindow class extends the node.js core EventEmitter class, so we use that API
     // to listen to events on the BrowserWindow. The resize event is emitted when the window size changes.
@@ -30,7 +30,7 @@ app.on('ready', function() {
     mainWindow.loadURL('file://' + path.join(__dirname, 'index.html'));
    // mainWindow.webContents.openDevTools();
     mainWindow.setMenu(null);
-    mainWindow.show();
+   
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {
@@ -40,10 +40,17 @@ app.on('ready', function() {
         mainWindow = null
     })
 
-    mainWindow.once('ready-to-show', () => {
-      autoUpdater.checkForUpdatesAndNotify();
-    });
-});
+   
+
+
+};
+
+// First instantiate the class
+
+
+
+// When our app is ready, we'll create our BrowserWindow
+app.on('ready', createWindow);
 
 
 // Quit when all windows are closed.
