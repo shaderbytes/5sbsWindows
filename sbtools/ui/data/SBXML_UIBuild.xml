@@ -6,6 +6,7 @@
   <BUILD_TARGET><![CDATA[buildUIComponents]]></BUILD_TARGET>
 
   <URLS>
+     <URL key="none"><![CDATA[]]></URL>
     <URL key="000"><![CDATA[sbtools/ui/assets/images/icons/refresh-camera.svg]]></URL>
     <URL key="00"><![CDATA[sbtools/ui/assets/images/icons/settings.svg]]></URL>
     <URL key="0"><![CDATA[sbtools/ui/assets/images/icons/menu.svg]]></URL>
@@ -11778,7 +11779,7 @@
                     <DATA>
                       <PROPERTY>
                         <KEY><![CDATA[filter]]></KEY>
-                        <VALUE><![CDATA[botticinocream2x2]]></VALUE>
+                        <VALUE><![CDATA[brecciaparadiso2x2]]></VALUE>
                         <TYPE><![CDATA[string]]></TYPE>
                       </PROPERTY>
                     </DATA>
@@ -14731,7 +14732,7 @@
                     <DATA>
                       <PROPERTY>
                         <KEY><![CDATA[url_sim]]></KEY>
-                        <VALUE>911</VALUE>
+                        <VALUE>91</VALUE>
                         <TYPE><![CDATA[string]]></TYPE>
                       </PROPERTY>
                     </DATA>
@@ -33393,6 +33394,13 @@
             <VALUE><![CDATA[false]]></VALUE>
             <TYPE><![CDATA[boolean]]></TYPE>
           </PROPERTY>
+           <VISIBILITY_FILTER>
+            <PROPERTY>
+              <KEY><![CDATA[name]]></KEY>
+              <VALUE><![CDATA[walkintubs]]></VALUE>
+              <TYPE><![CDATA[string]]></TYPE>
+            </PROPERTY>       
+          </VISIBILITY_FILTER>
 
           <HEADER>
             <UII>
@@ -34037,319 +34045,7 @@
     </UII>
 
 
-      <!-- Floor Designs****************************************************************** -->
-
-    <UII>
-      <TYPE><![CDATA[UIItemAccordian]]></TYPE>
-      <PROPERTY>
-        <KEY><![CDATA[isSelected]]></KEY>
-        <VALUE><![CDATA[false]]></VALUE>
-        <TYPE><![CDATA[boolean]]></TYPE>
-      </PROPERTY>
-
-      <HEADER>
-        <UII>
-          <TYPE><![CDATA[UIItemButton]]></TYPE>
-
-          <!--optional tag group is not required use only if grouping is needed-->
-          <SELECTION_GROUP>0</SELECTION_GROUP>
-          <CSS><![CDATA[ui-item-button-1]]></CSS>
-
-
-          <LABEL>
-            <UII>
-              <TYPE><![CDATA[UIItemLabel]]></TYPE>
-              <CSS><![CDATA[ui-item-p-1]]></CSS>
-              <VALUE><![CDATA[Floor Designs]]></VALUE>
-              <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-            </UII>
-          </LABEL>
-
-          <ICON>
-            <UII>
-              <TYPE><![CDATA[UIItemIcon]]></TYPE>
-              <CSS><![CDATA[ui-item-icon-2]]></CSS>
-              <CHILDREN>
-                <UII>
-                  <TYPE><![CDATA[UIDiv]]></TYPE>
-                  <CSS><![CDATA[ui-item-icon-mask-2]]></CSS>
-                  <MAP_TO_PROPERTY><![CDATA[mask]]></MAP_TO_PROPERTY>
-                </UII>
-              </CHILDREN>
-              <URL>4</URL>
-              <URL>5</URL>
-            </UII>
-          </ICON>
-
-        </UII>
-      </HEADER>
-      <CHILDREN>
-
-        <!-- flex-grid****************************************************************** -->
-
-        <UII>
-          <TYPE><![CDATA[UIDiv]]></TYPE>
-          <CSS><![CDATA[flex-grid-container]]></CSS>
-          <CHILDREN>
-            
-            
-            <!-- BUTTON NONE****************************************************************** -->
-
-            <UII>
-              <TYPE><![CDATA[UIItemButton]]></TYPE>
-
-              <PROPERTY>
-                <KEY><![CDATA[isSelected]]></KEY>
-                <VALUE><![CDATA[true]]></VALUE>
-                <TYPE><![CDATA[boolean]]></TYPE>
-              </PROPERTY>
-              <PROPERTY>
-                <KEY><![CDATA[permitEventDispatchOnBuild]]></KEY>
-                <VALUE><![CDATA[true]]></VALUE>
-                <TYPE><![CDATA[boolean]]></TYPE>
-              </PROPERTY>
-
-              <PROPERTY>
-                <KEY><![CDATA[hilight]]></KEY>
-                <VALUE><![CDATA[action2]]></VALUE>
-                <TYPE><![CDATA[string]]></TYPE>
-              </PROPERTY>
-
-
-              <SELECTION_GROUP>79</SELECTION_GROUP>
-              <CSS><![CDATA[ui-item-button-7]]></CSS>
-              <THUMB>221</THUMB>
-              <INTERACTION_HOOK>
-                <NAME><![CDATA[click]]></NAME>
-                <FUNCTION><![CDATA[setAssetTexture]]></FUNCTION>
-                <DATA>
-                  <PROPERTY>
-                    <KEY><![CDATA[assetTargetKey]]></KEY>
-                    <VALUE><![CDATA[floor_exterior]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[channel]]></KEY>
-                    <VALUE><![CDATA[albedoTexture]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[url]]></KEY>
-                    <VALUE>221</VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                </DATA>
-              </INTERACTION_HOOK>
-              <LABEL>
-                <UII>
-                  <TYPE><![CDATA[UIItemLabel]]></TYPE>
-                  <CSS><![CDATA[ui-item-p-6]]></CSS>
-                  <VALUE><![CDATA[None]]></VALUE>
-                  <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-                </UII>
-              </LABEL>
-
-            </UII>
-
-            <!-- BUTTON Delacy****************************************************************** -->
-
-            <UII>
-              <TYPE><![CDATA[UIItemButton]]></TYPE>
-             
-              <PROPERTY>
-                <KEY><![CDATA[hilight]]></KEY>
-                <VALUE><![CDATA[action2]]></VALUE>
-                <TYPE><![CDATA[string]]></TYPE>
-              </PROPERTY>
-
-            
-              <SELECTION_GROUP>14</SELECTION_GROUP>
-              <CSS><![CDATA[ui-item-button-7]]></CSS>
-              <THUMB>12</THUMB>
-              <INTERACTION_HOOK>
-                <NAME><![CDATA[click]]></NAME>
-                <FUNCTION><![CDATA[setAssetTexture]]></FUNCTION>
-                <DATA>
-                  <PROPERTY>
-                    <KEY><![CDATA[assetTargetKey]]></KEY>
-                    <VALUE><![CDATA[floor_exterior]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[channel]]></KEY>
-                    <VALUE><![CDATA[albedoTexture]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[url]]></KEY>
-                    <VALUE>16</VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                </DATA>
-              </INTERACTION_HOOK>
-              <LABEL>
-                <UII>
-                  <TYPE><![CDATA[UIItemLabel]]></TYPE>
-                  <CSS><![CDATA[ui-item-p-6]]></CSS>
-                  <VALUE><![CDATA[Delacy]]></VALUE>
-                  <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-                </UII>
-              </LABEL>
-
-            </UII>
-
-            <!-- BUTTON Logden****************************************************************** -->
-
-            <UII>
-              <TYPE><![CDATA[UIItemButton]]></TYPE>
-             
-              <PROPERTY>
-                <KEY><![CDATA[hilight]]></KEY>
-                <VALUE><![CDATA[action2]]></VALUE>
-                <TYPE><![CDATA[string]]></TYPE>
-              </PROPERTY>
-              
-              <SELECTION_GROUP>14</SELECTION_GROUP>
-              <CSS><![CDATA[ui-item-button-7]]></CSS>
-              <THUMB>13</THUMB>
-              <INTERACTION_HOOK>
-                <NAME><![CDATA[click]]></NAME>
-                <FUNCTION><![CDATA[setAssetTexture]]></FUNCTION>
-                <DATA>
-                  <PROPERTY>
-                    <KEY><![CDATA[assetTargetKey]]></KEY>
-                    <VALUE><![CDATA[floor_exterior]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[channel]]></KEY>
-                    <VALUE><![CDATA[albedoTexture]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[url]]></KEY>
-                    <VALUE>17</VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                </DATA>
-              </INTERACTION_HOOK>
-
-              <LABEL>
-                <UII>
-                  <TYPE><![CDATA[UIItemLabel]]></TYPE>
-                  <CSS><![CDATA[ui-item-p-6]]></CSS>
-                  <VALUE><![CDATA[Logden]]></VALUE>
-                  <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-                </UII>
-              </LABEL>
-
-            </UII>
-
-            <!-- BUTTON Silver Spurr****************************************************************** -->
-
-            <UII>
-              <TYPE><![CDATA[UIItemButton]]></TYPE>
-              <PROPERTY>
-                <KEY><![CDATA[hilight]]></KEY>
-                <VALUE><![CDATA[action2]]></VALUE>
-                <TYPE><![CDATA[string]]></TYPE>
-              </PROPERTY>
-             
-              <SELECTION_GROUP>14</SELECTION_GROUP>
-              <CSS><![CDATA[ui-item-button-7]]></CSS>
-              <THUMB>14</THUMB>
-              <INTERACTION_HOOK>
-                <NAME><![CDATA[click]]></NAME>
-                <FUNCTION><![CDATA[setAssetTexture]]></FUNCTION>
-                <DATA>
-                  <PROPERTY>
-                    <KEY><![CDATA[assetTargetKey]]></KEY>
-                    <VALUE><![CDATA[floor_exterior]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[channel]]></KEY>
-                    <VALUE><![CDATA[albedoTexture]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[url]]></KEY>
-                    <VALUE>18</VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                </DATA>
-              </INTERACTION_HOOK>
-
-              <LABEL>
-                <UII>
-                  <TYPE><![CDATA[UIItemLabel]]></TYPE>
-                  <CSS><![CDATA[ui-item-p-6]]></CSS>
-                  <VALUE><![CDATA[Silver Spurr]]></VALUE>
-                  <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-                </UII>
-              </LABEL>
-
-            </UII>
-
-            <!-- BUTTON Wind Song****************************************************************** -->
-           
-
-            <UII>
-              <TYPE><![CDATA[UIItemButton]]></TYPE>
-              <PROPERTY>
-                <KEY><![CDATA[hilight]]></KEY>
-                <VALUE><![CDATA[action2]]></VALUE>
-                <TYPE><![CDATA[string]]></TYPE>
-              </PROPERTY>
-              <!--optional tag group is not required use only if grouping is needed-->
-              <SELECTION_GROUP>14</SELECTION_GROUP>
-              <CSS><![CDATA[ui-item-button-7]]></CSS>
-              <THUMB>15</THUMB>
-              <INTERACTION_HOOK>
-                <NAME><![CDATA[click]]></NAME>
-                <FUNCTION><![CDATA[setAssetTexture]]></FUNCTION>
-                <DATA>
-                  <PROPERTY>
-                    <KEY><![CDATA[assetTargetKey]]></KEY>
-                    <VALUE><![CDATA[floor_exterior]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[channel]]></KEY>
-                    <VALUE><![CDATA[albedoTexture]]></VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                  <PROPERTY>
-                    <KEY><![CDATA[url]]></KEY>
-                    <VALUE>19</VALUE>
-                    <TYPE><![CDATA[string]]></TYPE>
-                  </PROPERTY>
-                </DATA>
-              </INTERACTION_HOOK>
-
-              <LABEL>
-                <UII>
-                  <TYPE><![CDATA[UIItemLabel]]></TYPE>
-                  <CSS><![CDATA[ui-item-p-6]]></CSS>
-                  <VALUE><![CDATA[Wind Song]]></VALUE>
-                  <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
-                </UII>
-              </LABEL>
-
-            </UII>
-
-
-
-
-          </CHILDREN>
-        </UII>
-
-
-
-
-
-      </CHILDREN>
-    </UII>
+    
 
       <!-- Paint Color****************************************************************** -->
 
@@ -34458,6 +34154,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#DDDDDD]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -34507,6 +34220,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#92959A]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -34518,7 +34248,7 @@
                 </LABEL>
               </UII>
 
-              <!-- BUTTON #9B8E80****************************************************************** -->
+              <!-- BUTTON #ADA499****************************************************************** -->
            
 
               <UII>
@@ -34537,7 +34267,7 @@
                   <VALUE><![CDATA[true]]></VALUE>
                   <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
-                <COLOR><![CDATA[#9B8E80]]></COLOR>
+                <COLOR><![CDATA[#ADA499]]></COLOR>
                 <INTERACTION_HOOK>
                   <NAME><![CDATA[click]]></NAME>
                   <FUNCTION><![CDATA[setAssetColor]]></FUNCTION>
@@ -34554,7 +34284,24 @@
                     </PROPERTY>
                     <PROPERTY>
                       <KEY><![CDATA[color]]></KEY>
-                      <VALUE><![CDATA[#9B8E80]]></VALUE>
+                      <VALUE><![CDATA[#ADA499]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#A89E98]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
@@ -34563,7 +34310,7 @@
                   <UII>
                     <TYPE><![CDATA[UIItemLabel]]></TYPE>
                     <CSS><![CDATA[ui-item-p-6]]></CSS>
-                    <VALUE><![CDATA[#9B8E80]]></VALUE>
+                    <VALUE><![CDATA[#ADA499]]></VALUE>
                     <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
                   </UII>
                 </LABEL>
@@ -34608,6 +34355,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#8A8785]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -34619,7 +34383,7 @@
                 </LABEL>
               </UII>
 
-              <!-- BUTTON #7C766C****************************************************************** -->
+              <!-- BUTTON #9B958B****************************************************************** -->
 
               <UII>
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
@@ -34636,7 +34400,7 @@
                   <VALUE><![CDATA[true]]></VALUE>
                   <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
-                <COLOR><![CDATA[#7C766C]]></COLOR>
+                <COLOR><![CDATA[#9B958B]]></COLOR>
                 <INTERACTION_HOOK>
                   <NAME><![CDATA[click]]></NAME>
                   <FUNCTION><![CDATA[setAssetColor]]></FUNCTION>
@@ -34653,7 +34417,24 @@
                     </PROPERTY>
                     <PROPERTY>
                       <KEY><![CDATA[color]]></KEY>
-                      <VALUE><![CDATA[#7C766C]]></VALUE>
+                      <VALUE><![CDATA[#9B958B]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#978E8A]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
@@ -34662,13 +34443,13 @@
                   <UII>
                     <TYPE><![CDATA[UIItemLabel]]></TYPE>
                     <CSS><![CDATA[ui-item-p-6]]></CSS>
-                    <VALUE><![CDATA[#7C766C]]></VALUE>
+                    <VALUE><![CDATA[#9B958B]]></VALUE>
                     <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
                   </UII>
                 </LABEL>
               </UII>
 
-              <!-- BUTTON #B8C0C8****************************************************************** -->
+              <!-- BUTTON #656975****************************************************************** -->
 
               <UII>
                 <TYPE><![CDATA[UIItemButton]]></TYPE>
@@ -34685,7 +34466,7 @@
                   <VALUE><![CDATA[true]]></VALUE>
                   <TYPE><![CDATA[boolean]]></TYPE>
                 </PROPERTY>
-                <COLOR><![CDATA[#B8C0C8]]></COLOR>
+                <COLOR><![CDATA[#656975]]></COLOR>
                 <INTERACTION_HOOK>
                   <NAME><![CDATA[click]]></NAME>
                   <FUNCTION><![CDATA[setAssetColor]]></FUNCTION>
@@ -34702,7 +34483,24 @@
                     </PROPERTY>
                     <PROPERTY>
                       <KEY><![CDATA[color]]></KEY>
-                      <VALUE><![CDATA[#B8C0C8]]></VALUE>
+                      <VALUE><![CDATA[#656975]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#5E6061]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
@@ -34711,7 +34509,7 @@
                   <UII>
                     <TYPE><![CDATA[UIItemLabel]]></TYPE>
                     <CSS><![CDATA[ui-item-p-6]]></CSS>
-                    <VALUE><![CDATA[#B8C0C8]]></VALUE>
+                    <VALUE><![CDATA[#656975]]></VALUE>
                     <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
                   </UII>
                 </LABEL>
@@ -34742,6 +34540,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[assetTargetKey]]></KEY>
                       <VALUE><![CDATA[wall_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#888383]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                     <PROPERTY>
@@ -34804,6 +34619,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#68615E]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -34850,6 +34682,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[color]]></KEY>
                       <VALUE><![CDATA[#A39F95]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#AAA4A1]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
@@ -34903,6 +34752,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#8D8D8D]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -34949,6 +34815,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[color]]></KEY>
                       <VALUE><![CDATA[#B4B2A8]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#9B9794]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
@@ -35001,6 +34884,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#665C58]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -35037,6 +34937,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[assetTargetKey]]></KEY>
                       <VALUE><![CDATA[wall_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#A59F9C]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                     <PROPERTY>
@@ -35099,6 +35016,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#92969E]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -35135,6 +35069,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[assetTargetKey]]></KEY>
                       <VALUE><![CDATA[wall_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#B5B5B9]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                     <PROPERTY>
@@ -35197,12 +35148,29 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#9B8A7D]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
                     <TYPE><![CDATA[UIItemLabel]]></TYPE>
                     <CSS><![CDATA[ui-item-p-6]]></CSS>
-                    <VALUE><![CDATA[#9B8A7D]]></VALUE>
+                    <VALUE><![CDATA[#A59894]]></VALUE>
                     <MAP_TO_PROPERTY><![CDATA[uiitemLabel]]></MAP_TO_PROPERTY>
                   </UII>
                 </LABEL>
@@ -35233,6 +35201,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[assetTargetKey]]></KEY>
                       <VALUE><![CDATA[wall_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#746C65]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                     <PROPERTY>
@@ -35296,6 +35281,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#8F8981]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -35342,6 +35344,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[color]]></KEY>
                       <VALUE><![CDATA[#61615A]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#696965]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
@@ -35395,6 +35414,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#797D7E]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -35432,6 +35468,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[assetTargetKey]]></KEY>
                       <VALUE><![CDATA[wall_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#A0A0A0]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                     <PROPERTY>
@@ -35494,6 +35547,23 @@
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                   </DATA>
+                <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#928A86]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
                 </INTERACTION_HOOK>
                 <LABEL>
                   <UII>
@@ -35530,6 +35600,23 @@
                     <PROPERTY>
                       <KEY><![CDATA[assetTargetKey]]></KEY>
                       <VALUE><![CDATA[wall_exterior]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[channel]]></KEY>
+                      <VALUE><![CDATA[albedoColor]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                    <PROPERTY>
+                      <KEY><![CDATA[color]]></KEY>
+                      <VALUE><![CDATA[#6B6B75]]></VALUE>
+                      <TYPE><![CDATA[string]]></TYPE>
+                    </PROPERTY>
+                  </DATA>
+                 <DATA>
+                    <PROPERTY>
+                      <KEY><![CDATA[assetTargetKey]]></KEY>
+                      <VALUE><![CDATA[floor_exterior]]></VALUE>
                       <TYPE><![CDATA[string]]></TYPE>
                     </PROPERTY>
                     <PROPERTY>

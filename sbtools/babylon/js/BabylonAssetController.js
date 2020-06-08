@@ -768,9 +768,12 @@ function BabylonAssetController(sceneControllerRef){
 		var asset = this.collectionMaterials[assetKey];
 		var used = false;
 		if(asset !== null && asset !== undefined){	
-			
-			asset[channel] = new BABYLON.Texture(url, this.sceneController.scene);
-			asset[channel].vScale = -1;
+			if(url === null || url === undefined || url === ""){
+				asset[channel] = null;
+			}else{
+				asset[channel] = new BABYLON.Texture(url, this.sceneController.scene);
+				asset[channel].vScale = -1;
+			}
 			//failsafe to remove albedo color // probaby need a better solution as you might in fact want this to reamin , for bumped plane colored surfaces
 			//asset.albedoColor = BABYLON.Color3.White();
 			used =  true;

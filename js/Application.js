@@ -456,11 +456,21 @@ function Application() {
     
         if(Array.isArray(event.data)){
         for(var i=0;i<event.data.length;i++){
-            bl.assetController.setTexture(event.data[i].assetTargetKey,event.data[i].channel, ui.dataUI.ROOT.URLS[event.data[i].url].nodeValue);   
+         console.log("url "+url);
+            var url =  ui.dataUI.ROOT.URLS[event.data[i].url].nodeValue;
+             if(url === "" || url === undefined){
+                url = null;
+            }
+            bl.assetController.setTexture(event.data[i].assetTargetKey,event.data[i].channel,url);   
         }
     
         }else{
-            bl.assetController.setTexture(event.data.assetTargetKey,event.data.channel, ui.dataUI.ROOT.URLS[event.data.url].nodeValue);   
+            var url =  ui.dataUI.ROOT.URLS[event.data.url].nodeValue;
+            console.log("url "+url);
+            if(url === "" || url === undefined){
+                url = null;
+            }
+            bl.assetController.setTexture(event.data.assetTargetKey,event.data.channel, url);   
         }
        
     
@@ -472,6 +482,7 @@ function Application() {
     
         if(Array.isArray(event.data)){
             for(var i=0;i<event.data.length;i++){
+
                bl.assetController.setColor(event.data[i].assetTargetKey,event.data[i].channel, event.data[i].color);      
             }
     

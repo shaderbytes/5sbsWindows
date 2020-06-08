@@ -1438,6 +1438,43 @@
     <VARIANT_KEY><![CDATA[shower_x60]]></VARIANT_KEY>
 
   </ASSET>
+  
+  
+  
+  <!-- curtain_bar_bath_x60_straight_walkin_tub-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_bath_x60_straight_walkin_tub]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_bath_x60_straight_walkin_tub.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_straight]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[walkintubs]]></VARIANT_KEY>
+
+  </ASSET>
+
+  <!-- curtain_bar_bath_x60_curved_walkin_tub-->
+  <ASSET>
+    <KEY><![CDATA[curtain_bar_bath_x60_curved_walkin_tub]]></KEY>
+    <TRANSFORM>
+      <DEFAULT>
+        <S><![CDATA[1,1,1]]></S>
+      </DEFAULT>
+      <HORIZONTAL_INVERT>
+        <S><![CDATA[-1,1,1]]></S>
+      </HORIZONTAL_INVERT>
+    </TRANSFORM>
+    <URL><![CDATA[assets/glb/curtain_bar_bath_x60_curved_walkin_tub.glb]]></URL>
+    <VARIANT_GROUP><![CDATA[curtain_curved]]></VARIANT_GROUP>
+    <VARIANT_KEY><![CDATA[walkintubs]]></VARIANT_KEY>
+
+  </ASSET>
+  
 
   <!-- wall_interior_center_full -->
   <ASSET>
