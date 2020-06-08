@@ -25385,6 +25385,57 @@
                     <TYPE><![CDATA[string]]></TYPE>
                   </PROPERTY>
                 </DATA>
+                <DATA>
+                  <PROPERTY>
+                    <KEY><![CDATA[assetTargetKey]]></KEY>
+                    <VALUE><![CDATA[shower_floor]]></VALUE>
+                    <TYPE><![CDATA[string]]></TYPE>
+                  </PROPERTY>
+                  <PROPERTY>
+                    <KEY><![CDATA[channel]]></KEY>
+                    <VALUE><![CDATA[albedoTexture]]></VALUE>
+                    <TYPE><![CDATA[string]]></TYPE>
+                  </PROPERTY>
+                </DATA>
+                <DATA>
+                  <PROPERTY>
+                    <KEY><![CDATA[assetTargetKey]]></KEY>
+                    <VALUE><![CDATA[shower_floor_threshold]]></VALUE>
+                    <TYPE><![CDATA[string]]></TYPE>
+                  </PROPERTY>
+                  <PROPERTY>
+                    <KEY><![CDATA[channel]]></KEY>
+                    <VALUE><![CDATA[albedoTexture]]></VALUE>
+                    <TYPE><![CDATA[string]]></TYPE>
+                  </PROPERTY>
+                </DATA>
+
+                <DATA>
+                  <PROPERTY>
+                    <KEY><![CDATA[assetTargetKey]]></KEY>
+                    <VALUE><![CDATA[shower_roof_mould]]></VALUE>
+                    <TYPE><![CDATA[string]]></TYPE>
+                  </PROPERTY>
+                  <PROPERTY>
+                    <KEY><![CDATA[channel]]></KEY>
+                    <VALUE><![CDATA[albedoTexture]]></VALUE>
+                    <TYPE><![CDATA[string]]></TYPE>
+                  </PROPERTY>
+                </DATA>
+
+                <DATA>
+                  <PROPERTY>
+                    <KEY><![CDATA[assetTargetKey]]></KEY>
+                    <VALUE><![CDATA[shower_roof]]></VALUE>
+                    <TYPE><![CDATA[string]]></TYPE>
+                  </PROPERTY>
+                  <PROPERTY>
+                    <KEY><![CDATA[channel]]></KEY>
+                    <VALUE><![CDATA[albedoTexture]]></VALUE>
+                    <TYPE><![CDATA[string]]></TYPE>
+                  </PROPERTY>
+                </DATA>
+                
 
 
               </INTERACTION_HOOK>
@@ -25407,6 +25458,7 @@
 
               </INTERACTION_HOOK>
 
+            
 
 
               <LABEL>
