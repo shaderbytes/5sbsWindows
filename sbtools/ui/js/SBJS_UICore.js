@@ -271,7 +271,7 @@ var UIItemControllerPrototype = {
     },
 
     invalidateScroll: function(UIItemRef) {        
-
+   
         if(!this.isOrientationLandscape){
             this.domElementContentJQ.css("padding-right", "");
         }else{

@@ -32,33 +32,51 @@ function Application() {
 
     //----------------------------------------------------------------------------------------------------------------
 
-     this.onWindowResize = function(){
-       
-       if(windowJQ.height() > windowJQ.width()){
+    this.onWindowResize = function(){
+        var isOrientationLandscapeOld = isOrientationLandscape;
+        if(windowJQ.height() > windowJQ.width()){
             isOrientationLandscape = false; 
+        }else{
+            isOrientationLandscape = true;  
+        }
+        TweenMax.killAll(true,true,true,true);
+        var displayOrientationChanged = false;
+        if(isOrientationLandscapeOld !== isOrientationLandscape){
+            displayOrientationChanged = true;
+        }
+        if(displayOrientationChanged){
+        if(!isOrientationLandscape){
             canvas[0].style.cssText = "";
             mainUI[0].style.cssText = "";
             uiHeadContent[0].style.cssText = "";
             topNav[0].style.cssText = "";
             uiToolContent[0].style.cssText = "";
             settingsNav[0].style.cssText = "";
-
-       }else{
-            isOrientationLandscape = true;  
-       }
-       TweenMax.killAll(true,true,true,true);
+            loadProgressComponent[0].style.cssText = "";
+            settingsNav.css("display","none");
+            loadProgressComponent.css("display","none");
+        
+        }
+            this.setMainUIDisplay(isOrientationLandscape);
+            ui.setOrientation(isOrientationLandscape);
+          
+            
+         
+        }
+       if(isOrientationLandscape){
+        this.adjustDisplay(isMenuShowing);
+        }
        
-       ui.setOrientation(isOrientationLandscape);
-       this.setMainUIDisplay(isOrientationLandscape);
-
         bl.engine.resize();
     };
 
     //----------------------------------------------------------------------------------------------------------------
 
     this.setMainUIDisplay = function(displayState){
+   
         isMenuShowing = displayState;
         mainUI.css("display",displayState?"block":"none");
+       
     };
 
     
@@ -90,7 +108,7 @@ function Application() {
      //----------------------------------------------------------------------------------------------------------------
 
     this.onTreeLinesClick = function(event){ 
-       
+      
         var UIIC =event.UIItemTarget.UIItemController;
         UIIC.treeLinesActive = !UIIC.treeLinesActive;
         UIIC.setTreeLineVisibility();
@@ -99,6 +117,7 @@ function Application() {
     };
 
     this.onUIPositionUpdate = function(){
+  
        // if(!frameskip){
             bl.engine.resize();
        // }
@@ -106,10 +125,50 @@ function Application() {
     }
 
      //----------------------------------------------------------------------------------------------------------------
+     this.adjustDisplay = function(state){
 
+            if(!state){
+                var w = windowJQ.width() - 205;
+                var h = windowJQ.height() - 55;
+                var mainUIWidth = mainUI.width();
+                TweenMax.to(canvas[0],.2,{css:{width:"100%",top:55,height:h},onUpdate :this.onUIPositionUpdate});
+                TweenMax.to(mainUI[0],.2,{css:{left:-mainUIWidth}});
+                TweenMax.to(uiHeadContent[0],.2,{css:{height:50,width:200}});
+                TweenMax.to(topNav[0],.2,{css:{height:50}});
+                TweenMax.to(uiToolContent[0],.2,{css:{height:50,width:w,left:205}});
+                TweenMax.to(settingsNav[0],.2,{css:{top:55}});
+                 TweenMax.to(loadProgressComponent[0],.2,{css:{top:10,height:30}});
+
+                
+                
+            }else{
+               
+                var w = windowJQ.width();
+                var h = windowJQ.height() ;
+                 var mainUIWidth = Math.max(w*0.2,200);
+                var uiHeadContentHeight = Math.max(50,(h*0.1));
+               
+                var preloaderHeight = uiHeadContentHeight * 0.6;
+                var preloaderTop = (uiHeadContentHeight - preloaderHeight)/2;
+
+
+               
+                TweenMax.to(canvas[0],.2,{css:{width:(w-mainUIWidth-5),top:(uiHeadContentHeight+5),height:(h-uiHeadContentHeight-5)},onUpdate :this.onUIPositionUpdate});
+                TweenMax.to(mainUI[0],.2,{css:{left:0}});
+                TweenMax.to(uiHeadContent[0],.2,{css:{height:uiHeadContentHeight,width:mainUIWidth}});
+                TweenMax.to(topNav[0],.2,{css:{height:uiHeadContentHeight}});                
+                TweenMax.to(uiToolContent[0],.2,{css:{width:w,left:(mainUIWidth+5)}});
+                 TweenMax.to(settingsNav[0],.2,{css:{top:uiHeadContentHeight}});
+                  TweenMax.to(loadProgressComponent[0],.2,{css:{top:preloaderTop,height:preloaderHeight}});
+
+
+                    
+            }
+     
+     }
 
     this.onNavigationExpansionClick = function(event){   
-
+  
         if(!isOrientationLandscape){
             //portrait mode show just toggle diplay
             isMenuShowing = !isMenuShowing;
@@ -118,26 +177,8 @@ function Application() {
         }else{
             //landscape mode so use side animation
              isMenuShowing = !isMenuShowing;
-            if(!isMenuShowing){
-                var w = windowJQ.width() - 205;
-                var h = windowJQ.height() - 55;
-                TweenMax.to(canvas[0],.2,{css:{width:"100%",top:55,height:h},onUpdate :this.onUIPositionUpdate});
-                TweenMax.to(mainUI[0],.2,{css:{left:-360}});
-                TweenMax.to(uiHeadContent[0],.2,{css:{height:50,width:200,padding:4}});
-                TweenMax.to(topNav[0],.2,{css:{height:50}});
-                TweenMax.to(uiToolContent[0],.2,{css:{width:w,left:205}});
-                TweenMax.to(settingsNav[0],.2,{css:{top:50}});
-                
-            }else{
-                var w = windowJQ.width() - 365;
-                var h = windowJQ.height() - 105;
-                TweenMax.to(canvas[0],.2,{css:{width:w,top:105,height:h},onUpdate :this.onUIPositionUpdate});
-                TweenMax.to(mainUI[0],.2,{css:{left:0}});
-                TweenMax.to(uiHeadContent[0],.2,{css:{height:100,width:360,padding:15}});
-                TweenMax.to(topNav[0],.2,{css:{height:100}});                
-                TweenMax.to(uiToolContent[0],.2,{css:{width:w,left:365}});
-                 TweenMax.to(settingsNav[0],.2,{css:{top:100}});
-            }
+             this.adjustDisplay(isMenuShowing);
+            
         }
 
       
@@ -456,7 +497,7 @@ function Application() {
     
         if(Array.isArray(event.data)){
         for(var i=0;i<event.data.length;i++){
-         console.log("url "+url);
+        
             var url =  ui.dataUI.ROOT.URLS[event.data[i].url].nodeValue;
              if(url === "" || url === undefined){
                 url = null;

@@ -163,9 +163,9 @@
 
 .ui-item-button-3-theme-2{
 
-     background-color: #3a3a3a;
-     margin-bottom: 4px;
+background-color: #3a3a3a;
 
+margin-bottom: 4px;
 }
 
 .ui-item-button-5-theme-1{      
@@ -223,11 +223,11 @@
 
 .ui-item-p-1-theme-2{
 
-    color: #e1e1e1;
-    font-size: 16px;
-    font-weight: 600;
-    
+color: #e1e1e1;
 
+font-size: 1.1em;
+
+font-weight: 600;
 }
 
 /* .ui-item-p-2 */
@@ -243,11 +243,11 @@
 
 .ui-item-p-2-theme-2{
 
-    color: #ddd;
-    font-size: 14px;
-    font-weight: 600;
-    
+color: #ddd;
 
+font-size: 1em;
+
+font-weight: 600;
 }
 
 /* .ui-item-p-3 */
@@ -263,11 +263,11 @@
 
 .ui-item-p-3-theme-2{
 
-   color: #bbb;
-    font-size: 16px;
-    font-weight: 600;
-    
+color: #bbb;
 
+font-size: 1em;
+
+font-weight: 600;
 }
 
 
@@ -287,14 +287,19 @@
 
 .ui-item-p-4-theme-2{
 
-    color: #eee;
-    font-size: 16px;
-    font-weight: 900;   
-    font-family: 'Courgette-Regular';
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 0px #111;
-    
+color: #eee;
 
+font-size: 1em;
+
+font-weight: 900;
+
+font-family: 'Courgette-Regular';
+
+letter-spacing: 2px;
+
+text-shadow: 1px 1px 0px #111;
+
+position: relative;
 }
 
 
@@ -312,12 +317,13 @@
 
 .ui-item-p-5-theme-2{
 
-    font-size:14px;
-    color:#eee;
-    font-weight:600;
-     font-family: 'PoppinsLight';
-    
+font-size: 1em;
 
+color:#eee;
+
+font-weight:600;
+
+font-family: 'PoppinsLight';
 }
 
 
@@ -426,7 +432,7 @@ background-color: #e5e5e5;
 
 /*MEDIA QUERY--------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 800px) {
+@media (orientation: landscape) {
 
 .ui-item-content-theme-1{
     padding-left: 20px;
@@ -440,7 +446,7 @@ background-color: #e5e5e5;
     padding-left: 20px;
     padding-right: 20px;
     border-right: 3px solid #5e5e5e;
-   
+    position: relative;
 }
 
 

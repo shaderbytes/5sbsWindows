@@ -1,25 +1,5 @@
 ﻿
-#notification {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 200px;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  z-index:12000;
-}
-.hidden {
-  display: none;
-}
 
-
-html, body {
-           
-    touch-action: none;
-    -ms-touch-action: none;
-}
 
 	 #renderCanvas {
    width: 100%;
@@ -35,15 +15,14 @@ html, body {
 
 #preloader-1{
     position: relative;
-    z-index: 500;
-    top: 20px;
+    z-index: 500;   
     right: 0;
     width: 80%;
     margin:0 auto;
     height: 60px;
     background-color: #232323;
     color: #eee;
-    font-size: 14px;
+    font-size: 0.8em;
     font-weight: 600;
 }
 
@@ -100,11 +79,16 @@ min-width:unset !important;
 @media (orientation: landscape) {
 
 #preloader-1{
-    position: absolute;  
-    top: 20px;
+       position: absolute;
+    top: min(2%,calc(calc(50px * 0.6) *0.5));
     right: 0;
-    width: 300px;
+    width: 15%;
+    min-width: 200px;
+    height: max(30px,calc(10% * 0.6));
+    min-height: 30px;
+    
    
+  
 }
  
  #content{
@@ -114,12 +98,17 @@ height:100%
 }
 
  #renderCanvas {
-   width: calc(100% - 365px);
-    height: calc(100% - 105px);
-    position: absolute;
-    right: 0;
-    top: 105px;
-   
+   width: min(calc(100% - 200px - 5px),calc(100% - 20% - 5px)) ;
+  
+ 
+
+   height: min(calc(90% - 5px),calc(100% - 55px));
+
+ 
+   position: absolute;
+   right: 0;
+   top: max(55px,calc(10% + 5px));
+  
 }
 
    
